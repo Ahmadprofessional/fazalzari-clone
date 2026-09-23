@@ -25,3 +25,15 @@ export interface SocialLink {
   href: string;
   icon: "facebook" | "x" | "youtube";
 }
+
+export interface Product {
+  slug: string;
+  name: string;
+  category: string;
+  price: number;
+  currency: string;
+  images: string[];
+  highlights: string[];
+  description: string;
+  productionNote: string;
+}

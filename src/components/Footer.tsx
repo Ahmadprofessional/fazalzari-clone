@@ -29,12 +29,12 @@ function YoutubeIcon(props: SVGProps<SVGSVGElement>) {
 }
 
 const QUICK_LINKS: QuickLink[] = [
-  { label: "New Arrivals", href: "#" },
-  { label: "Bridal", href: "#" },
-  { label: "Formals", href: "#" },
-  { label: "Jewellery", href: "#" },
-  { label: "Unstitch", href: "#" },
-  { label: "Ready To Deliver", href: "#" },
+  { label: "New Arrivals", href: "/products" },
+  { label: "Bridal", href: "/bridal-wear" },
+  { label: "Formals", href: "/products" },
+  { label: "Jewellery", href: "/products" },
+  { label: "Unstitch", href: "/products" },
+  { label: "Ready To Deliver", href: "/products" },
 ];
 
 const SOCIAL_LINKS: SocialLink[] = [

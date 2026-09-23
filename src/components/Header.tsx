@@ -3,20 +3,22 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ShoppingBag, Search, User, Phone } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { Menu, X, Search, User, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "#" },
-  { label: "Products", href: "#" },
-  { label: "Checkout", href: "#" },
-  { label: "Contact Us", href: "#" },
-  { label: "Bridal Wear", href: "#" },
+  { label: "About Us", href: "/about-us" },
+  { label: "Products", href: "/products" },
+  { label: "Bridal Wear", href: "/bridal-wear" },
+  { label: "Contact Us", href: "/contact-us" },
 ];
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="bg-ink w-full">
@@ -76,7 +78,7 @@ export default function Header() {
               href={link.href}
               className={cn(
                 "font-sans text-[11px] font-medium uppercase leading-5 tracking-[3px] transition-colors duration-300 hover:text-gold",
-                link.label === "Home" ? "text-gold" : "text-white"
+                pathname === link.href ? "text-gold" : "text-white"
               )}
             >
               {link.label}
@@ -88,21 +90,16 @@ export default function Header() {
         <div className="flex items-center gap-5">
           <button
             type="button"
-            aria-label="Cart"
-            className="relative text-white transition-colors duration-300 hover:text-gold"
-          >
-            <ShoppingBag className="size-5" />
-            <span className="absolute -right-1.5 -top-1.5 flex size-4 items-center justify-center rounded-full border border-gold bg-black text-[10px] text-white">
-              0
-            </span>
-          </button>
-          <button
-            type="button"
             aria-label="Search"
             className="text-white transition-colors duration-300 hover:text-gold"
           >
             <Search className="size-5" />
           </button>
+          <WhatsAppButton
+            variant="inline"
+            label=""
+            className="text-white transition-colors duration-300 hover:text-[#25D366]"
+          />
           <button
             type="button"
             aria-label="Account"
@@ -123,7 +120,7 @@ export default function Header() {
               onClick={() => setMobileOpen(false)}
               className={cn(
                 "font-sans text-[11px] font-medium uppercase leading-5 tracking-[3px] transition-colors duration-300 hover:text-gold",
-                link.label === "Home" ? "text-gold" : "text-white"
+                pathname === link.href ? "text-gold" : "text-white"
               )}
             >
               {link.label}
