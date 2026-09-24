@@ -35,11 +35,11 @@ export default function ProductCard({ product }: { product: Product }) {
           {product.name}
         </Link>
         <span className="font-sans text-base text-body-gray">
-          Rs {price}
+          Contact Us for Price
         </span>
         <WhatsAppButton
           variant="inline"
-          message={`Hi, I'm interested in the ${product.name} (Rs ${price}).`}
+          message={`Hi, I'm interested in the ${product.name}. Could you please share the price?`}
           label="Enquire on WhatsApp"
           className="mt-3 inline-flex items-center justify-center gap-2 rounded-[3px] border-[1.6px] border-gold-light px-5 py-2.5 font-serif text-[13px] font-semibold uppercase text-ink transition-all duration-300 ease-in-out hover:bg-gold-light"
         />

@@ -27,11 +27,11 @@ export async function generateMetadata({
   const price = formatPrice(product.price);
 
   return {
-    title: `${product.name} — Rs ${price}`,
+    title: `${product.name}`,
     description: product.description.slice(0, 160),
     alternates: { canonical: `/products/${product.slug}` },
     openGraph: {
-      title: `${product.name} — Rs ${price} | Fazal Zari`,
+      title: `${product.name} | Fazal Zari`,
       description: product.description.slice(0, 200),
       url: `${BASE_URL}/products/${product.slug}`,
       images: product.images.map((img) => ({
@@ -137,7 +137,7 @@ export default async function ProductDetailPage({
                 {product.name}
               </h1>
               <p className="font-sans text-xl sm:text-2xl text-body-gray">
-                Rs {price}
+                Contact Us for Price
               </p>
 
               <ul className="flex flex-col gap-2 border-y border-gold-border/40 py-5">
@@ -162,7 +162,7 @@ export default async function ProductDetailPage({
 
               <WhatsAppButton
                 variant="inline"
-                message={`Hi, I'm interested in the ${product.name} (Rs ${price}).`}
+                message={`Hi, I'm interested in the ${product.name}. Could you please share the price?`}
                 label="Enquire on WhatsApp"
                 className="mt-4 inline-flex w-full sm:w-fit items-center justify-center gap-2 rounded-[3px] border-[1.6px] border-gold-light px-6 sm:px-8 py-3 sm:py-3.5 font-serif text-[14px] sm:text-[15px] font-semibold uppercase text-ink transition-all duration-300 ease-in-out hover:bg-gold-light"
               />
