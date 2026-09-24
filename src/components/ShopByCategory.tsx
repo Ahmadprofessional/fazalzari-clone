@@ -8,6 +8,8 @@ const CATEGORIES: CategoryCard[] = [
   { label: "Bridal Wear", image: "/images/category-bridal.png", href: "/bridal-wear" },
   { label: "Formals Wear", image: "/images/category-formals.png", href: "/products" },
   { label: "Ready Deliver", image: "/images/category-ready-deliver.png", href: "/products" },
+  { label: "Unstitched", image: "/images/category-unstitched.png", href: "/products" },
+  { label: "Jewellery", image: "/images/category-jewellery.png", href: "/products" },
 ];
 
 export default function ShopByCategory() {
