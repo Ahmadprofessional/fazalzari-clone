@@ -58,7 +58,7 @@ export default function ContactUsPage() {
       <Header />
       <main className="flex flex-1 flex-col">
         {/* 1. Page hero */}
-        <section className="relative flex min-h-[40vh] sm:min-h-[50vh] w-full items-center overflow-hidden bg-ink">
+        <section className="relative flex min-h-[40vh] sm:min-h-[50vh] w-full items-center overflow-hidden bg-ink pt-32 pb-16 sm:pt-40 sm:pb-20">
           <Image
             src="/images/about-hero-bg.jpeg"
             alt="Fazal Zari bridal craftsmanship"
