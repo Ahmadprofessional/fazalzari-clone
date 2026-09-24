@@ -42,14 +42,14 @@ export default function Header() {
       </div>
 
       {/* Main nav */}
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
         {/* Mobile hamburger */}
         <button
           type="button"
           aria-label="Toggle menu"
           aria-expanded={mobileOpen}
           onClick={() => setMobileOpen((open) => !open)}
-          className="text-white transition-colors duration-300 hover:text-gold md:hidden"
+          className="text-white transition-colors duration-300 hover:text-gold md:hidden p-1"
         >
           {mobileOpen ? <X className="size-6" /> : <Menu className="size-6" />}
         </button>

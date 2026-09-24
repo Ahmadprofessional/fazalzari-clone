@@ -1,9 +1,18 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import Counter from "@/components/Counter";
+import { BLUR_DARK, BLUR_CREAM } from "@/lib/blur";
+
+export const metadata: Metadata = {
+  title: "About Us — Our Heritage & Craftsmanship",
+  description:
+    "Learn about Fazal Zari's legacy of handcrafted Pakistani bridal couture. Heritage zardozi embroidery, pure silk fabrics, and bespoke silhouettes since 1999.",
+  alternates: { canonical: "/about-us" },
+};
 
 const philosophy = [
   {
@@ -75,7 +84,7 @@ export default function AboutUsPage() {
       <Header />
       <main className="flex flex-1 flex-col">
         {/* 1. Page hero */}
-        <section className="relative flex min-h-[55vh] w-full items-center overflow-hidden bg-ink">
+        <section className="relative flex min-h-[45vh] sm:min-h-[55vh] w-full items-center overflow-hidden bg-ink">
           <Image
             src="/images/about-hero-bg.jpeg"
             alt="Fazal Zari bridal craftsmanship"
@@ -83,10 +92,12 @@ export default function AboutUsPage() {
             priority
             sizes="100vw"
             className="object-cover object-center"
+            placeholder="blur"
+            blurDataURL={BLUR_DARK}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
 
-          <div className="relative z-10 mx-auto w-full max-w-7xl px-6 md:px-10">
+          <div className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-6 md:px-10">
             <div className="max-w-[600px]">
               <div className="mb-4 flex items-center gap-3">
                 <span className="h-px w-10 bg-gold" />
@@ -95,11 +106,11 @@ export default function AboutUsPage() {
                 </span>
               </div>
 
-              <h1 className="font-serif text-[28px] font-medium uppercase leading-[1.1] text-white md:text-[40px] md:leading-[1.1]">
+              <h1 className="font-serif text-[24px] sm:text-[32px] md:text-[40px] font-medium uppercase leading-[1.1] text-white">
                 Crafting Heritage. Designing Dreams.
               </h1>
 
-              <p className="mt-6 max-w-[480px] font-italic text-base italic font-normal leading-[27px] text-white">
+              <p className="mt-4 sm:mt-6 max-w-[480px] font-italic text-[14px] sm:text-base italic font-normal leading-[24px] sm:leading-[27px] text-white">
                 Every Fazal Zari creation is more than bridal wear. It is a
                 celebration of Pakistani craftsmanship, timeless elegance,
                 and unforgettable moments.
@@ -107,7 +118,7 @@ export default function AboutUsPage() {
 
               <Link
                 href="/products"
-                className="mt-8 inline-block rounded-[3px] border-[1.6px] border-gold-light px-7 py-[15px] font-serif text-[15px] font-semibold uppercase text-white transition-all duration-300 ease-in-out hover:bg-gold-light hover:text-[#0a0a0a]"
+                className="mt-6 sm:mt-8 inline-block rounded-[3px] border-[1.6px] border-gold-light px-6 sm:px-7 py-3 sm:py-[15px] font-serif text-[14px] sm:text-[15px] font-semibold uppercase text-white transition-all duration-300 ease-in-out hover:bg-gold-light hover:text-[#0a0a0a]"
               >
                 Explore Collection
               </Link>
@@ -117,22 +128,25 @@ export default function AboutUsPage() {
 
         {/* 2. About Us intro */}
         <Reveal>
-          <section className="w-full bg-cream/40 py-20">
-            <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2 md:px-10">
+          <section className="w-full bg-cream/40 py-12 sm:py-16 md:py-20">
+            <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 sm:gap-12 px-5 sm:px-6 md:grid-cols-2 md:px-10">
               <div className="order-1">
                 <Image
                   src="/images/about-story.png"
                   alt="Fazal Zari bridal artistry"
                   width={500}
                   height={333}
+                  sizes="(min-width: 768px) 500px, 100vw"
                   className="h-auto w-full rounded-md object-cover"
+                  placeholder="blur"
+                  blurDataURL={BLUR_CREAM}
                 />
               </div>
               <div className="order-2">
                 <span className="font-sans text-xs font-medium tracking-[0.2em] text-gold-muted uppercase">
                   About Us
                 </span>
-                <h2 className="mt-3 font-serif text-[32px] font-medium uppercase leading-[1.1] text-[#0a0a0a] md:text-[36px]">
+                <h2 className="mt-3 font-serif text-[26px] sm:text-[32px] md:text-[36px] font-medium uppercase leading-[1.1] text-[#0a0a0a]">
                   Our Story
                 </h2>
                 <p className="mt-6 font-sans text-base font-normal leading-[27px] text-body-gray">
@@ -161,10 +175,12 @@ export default function AboutUsPage() {
               fill
               sizes="100vw"
               className="object-cover object-center"
+              placeholder="blur"
+              blurDataURL={BLUR_DARK}
             />
             <div className="absolute inset-0 bg-black/60" />
             <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-              <p className="font-serif text-2xl italic font-medium leading-[1.4] text-white md:text-[34px] md:leading-[1.4]">
+              <p className="font-serif text-xl sm:text-2xl md:text-[34px] italic font-medium leading-[1.4] text-white">
                 &ldquo;Our brides wear more than beautiful garments. They
                 wear stories.&rdquo;
               </p>
@@ -174,11 +190,11 @@ export default function AboutUsPage() {
 
         {/* 4. Our Philosophy */}
         <Reveal>
-          <section className="w-full bg-white py-20">
-            <div className="mx-auto max-w-7xl px-6 text-center md:px-10">
+          <section className="w-full bg-white py-12 sm:py-16 md:py-20">
+            <div className="mx-auto max-w-7xl px-5 sm:px-6 text-center md:px-10">
               <SectionHeading>Our Philosophy</SectionHeading>
 
-              <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
+              <div className="mt-8 sm:mt-12 grid grid-cols-1 gap-8 sm:gap-12 md:grid-cols-3 md:gap-8">
                 {philosophy.map((item) => (
                   <div
                     key={item.title}
@@ -206,8 +222,8 @@ export default function AboutUsPage() {
 
         {/* 5. Why Choose Fazal Zari */}
         <Reveal>
-          <section className="w-full bg-cream/40 py-20">
-            <div className="mx-auto max-w-7xl px-6 text-center md:px-10">
+          <section className="w-full bg-cream/40 py-12 sm:py-16 md:py-20">
+            <div className="mx-auto max-w-7xl px-5 sm:px-6 text-center md:px-10">
               <SectionHeading>Why Choose Fazal Zari</SectionHeading>
 
               <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -221,7 +237,10 @@ export default function AboutUsPage() {
                       alt={item.title}
                       width={800}
                       height={533}
+                      sizes="(min-width: 1024px) 220px, (min-width: 640px) 50vw, 100vw"
                       className="h-[150px] w-[220px] rounded-md object-cover"
+                      placeholder="blur"
+                      blurDataURL={BLUR_CREAM}
                     />
                     <h3 className="font-serif text-xl font-semibold uppercase leading-6 text-[#0a0a0a]">
                       {item.title}
@@ -251,7 +270,7 @@ export default function AboutUsPage() {
               <span className="font-sans text-xs font-medium tracking-[0.2em] text-gold-muted uppercase">
                 Trusted By Brides
               </span>
-              <h2 className="mt-3 font-serif text-[32px] font-medium uppercase leading-[1.1] text-white md:text-[36px]">
+              <h2 className="mt-3 font-serif text-[26px] sm:text-[32px] md:text-[36px] font-medium uppercase leading-[1.1] text-white">
                 Trusted By Brides
               </h2>
               <p className="mt-4 font-italic text-base italic font-normal leading-[27px] text-white/80">
@@ -264,7 +283,7 @@ export default function AboutUsPage() {
                     <Counter
                       to={stat.to}
                       suffix={stat.suffix}
-                      className="font-serif text-[48px] font-medium leading-none text-gold"
+                      className="font-serif text-[36px] sm:text-[42px] md:text-[48px] font-medium leading-none text-gold"
                     />
                     <p className="font-sans text-sm font-normal leading-[21px] text-white/70">
                       {stat.label}

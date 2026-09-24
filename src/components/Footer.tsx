@@ -52,13 +52,13 @@ const SOCIAL_ICONS = {
 export default function Footer() {
   return (
     <footer className="bg-ink">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-16 md:grid-cols-4">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 sm:gap-10 px-5 sm:px-6 py-10 sm:py-14 md:py-16 sm:grid-cols-2 md:grid-cols-4">
         {/* Col 1: About */}
         <div>
-          <h3 className="font-serif text-[21px] font-bold leading-[21px] text-gold-muted">
+          <h3 className="font-serif text-[18px] sm:text-[21px] font-bold leading-tight text-gold-muted">
             About Fazal Zari
           </h3>
-          <p className="mt-4 font-sans text-sm text-body-gray">
+          <p className="mt-3 sm:mt-4 font-sans text-sm text-body-gray">
             Fazal Zari Bridal Wear is where heritage meets luxury. Each piece
             is a work of art, handcrafted to make your special day truly
             unforgettable.
@@ -71,6 +71,8 @@ export default function Footer() {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
+                  rel="noopener noreferrer"
+                  target="_blank"
                   className="flex h-9 w-9 items-center justify-center rounded-full border border-gold/40 text-body-gray transition-colors duration-300 hover:text-gold"
                 >
                   <Icon className="size-4" />
@@ -82,10 +84,10 @@ export default function Footer() {
 
         {/* Col 2: Quick Links */}
         <div>
-          <h3 className="font-serif text-[21px] font-bold leading-[21px] text-gold-muted">
+          <h3 className="font-serif text-[18px] sm:text-[21px] font-bold leading-tight text-gold-muted">
             Quick Links
           </h3>
-          <ul className="mt-4 space-y-2">
+          <ul className="mt-3 sm:mt-4 space-y-2">
             {QUICK_LINKS.map((link) => (
               <li key={link.label}>
                 <Link
@@ -100,22 +102,22 @@ export default function Footer() {
         </div>
 
         {/* Col 3: Centered logo badge */}
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center order-first sm:order-none md:order-none py-2 sm:py-0">
           <Image
             src="/images/logo.png"
             alt="Fazal Zari"
             width={140}
             height={140}
-            className="h-[140px] w-[140px]"
+            className="h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] md:h-[140px] md:w-[140px]"
           />
         </div>
 
         {/* Col 4: Store info + newsletter */}
         <div>
-          <h3 className="font-serif text-[21px] font-bold leading-[21px] text-gold-muted">
+          <h3 className="font-serif text-[18px] sm:text-[21px] font-bold leading-tight text-gold-muted">
             STORE INFORMATION
           </h3>
-          <ul className="mt-4 space-y-3">
+          <ul className="mt-3 sm:mt-4 space-y-3">
             <li className="flex items-start gap-3">
               <MapPin className="mt-0.5 size-4 shrink-0 text-gold" />
               <span className="font-sans text-sm text-body-gray">
@@ -143,23 +145,30 @@ export default function Footer() {
             </li>
           </ul>
 
-          <h3 className="mt-6 font-serif text-[21px] font-bold leading-[21px] text-gold-muted">
+          <h3 className="mt-5 sm:mt-6 font-serif text-[18px] sm:text-[21px] font-bold leading-tight text-gold-muted">
             NEWSLETTER
           </h3>
           <p className="mt-2 font-sans text-sm text-body-gray">
             Subscribe to get updates on new collections &amp; exclusive
             offers.
           </p>
-          <form className="mt-2 flex items-center gap-2">
+          <form className="mt-2 flex items-center gap-2" aria-label="Newsletter signup">
+            <label htmlFor="footer-newsletter-email" className="sr-only">
+              Email address
+            </label>
             <input
+              id="footer-newsletter-email"
               type="email"
+              name="email"
               placeholder="Email"
-              className="h-11 w-full min-w-0 flex-1 border border-gold-border bg-transparent px-4 font-sans text-sm text-white placeholder:text-body-gray focus:border-gold focus:outline-none"
+              required
+              autoComplete="email"
+              className="h-10 sm:h-11 w-full min-w-0 flex-1 border border-gold-border bg-transparent px-3 sm:px-4 font-sans text-sm text-white placeholder:text-body-gray focus:border-gold focus:outline-none transition-colors duration-200"
             />
             <button
-              type="button"
-              aria-label="Subscribe"
-              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gold text-ink transition-colors duration-300 hover:bg-gold-light"
+              type="submit"
+              aria-label="Subscribe to newsletter"
+              className="flex h-10 w-10 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-full bg-gold text-ink transition-colors duration-300 hover:bg-gold-light"
             >
               <ArrowRight className="size-4" />
             </button>
@@ -167,7 +176,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 py-5 text-center font-sans text-xs uppercase tracking-[1px] text-body-gray">
+      <div className="border-t border-white/10 py-4 sm:py-5 text-center font-sans text-[11px] sm:text-xs uppercase tracking-[1px] text-body-gray px-5 sm:px-6">
         Copyright Fazal Zari 2026. All Right Reserved
       </div>
     </footer>
