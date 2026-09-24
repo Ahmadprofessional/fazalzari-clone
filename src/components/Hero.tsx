@@ -4,7 +4,7 @@ import { BLUR_DARK } from "@/lib/blur";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[75vh] sm:min-h-[85vh] w-full items-center overflow-hidden bg-ink py-16 sm:py-20 md:py-0">
+    <section className="relative flex min-h-[75vh] sm:min-h-[85vh] w-full items-center overflow-hidden bg-ink py-16 sm:py-20 md:py-24 lg:py-32">
       <Image
         src="/images/hero-bg.jpeg"
         alt="Chandelier and mirrored boutique interior at Fazal Zari"
