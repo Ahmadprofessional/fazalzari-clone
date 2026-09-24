@@ -136,9 +136,9 @@ export default async function ProductDetailPage({
               <h1 className="font-serif-alt text-[26px] sm:text-[32px] md:text-[40px] font-medium leading-tight text-ink">
                 {product.name}
               </h1>
-              <p className="font-sans text-xl sm:text-2xl text-body-gray">
+              <Link href="/contact-us" className="font-sans text-xl sm:text-2xl text-body-gray hover:text-gold transition-colors duration-300">
                 Contact Us for Price
-              </p>
+              </Link>
 
               <ul className="flex flex-col gap-2 border-y border-gold-border/40 py-5">
                 {product.highlights.map((h) => (

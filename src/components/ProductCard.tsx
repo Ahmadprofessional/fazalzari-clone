@@ -34,9 +34,9 @@ export default function ProductCard({ product }: { product: Product }) {
         >
           {product.name}
         </Link>
-        <span className="font-sans text-base text-body-gray">
+        <Link href="/contact-us" className="font-sans text-base text-body-gray hover:text-gold transition-colors duration-300">
           Contact Us for Price
-        </span>
+        </Link>
         <WhatsAppButton
           variant="inline"
           message={`Hi, I'm interested in the ${product.name}. Could you please share the price?`}
