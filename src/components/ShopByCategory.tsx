@@ -30,28 +30,28 @@ export default function ShopByCategory() {
         </div>
 
         {/* Category cards */}
-        <div className="grid grid-cols-2 gap-4 sm:gap-6 md:flex md:flex-wrap md:justify-center md:gap-x-6 md:gap-y-10">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6 sm:gap-6">
           {CATEGORIES.map((category) => (
             <Link
               key={category.label}
               href={category.href}
-              className="group flex w-full flex-col items-center transition-transform duration-300 hover:-translate-y-1 md:w-[220px]"
+              className="group flex w-full flex-col items-center transition-transform duration-300 hover:-translate-y-1"
             >
               {category.image && (
-                <div className="overflow-hidden">
+                <div className="w-full overflow-hidden">
                   <Image
                     src={category.image}
                     alt={category.label}
                     width={702}
                     height={1024}
-                    sizes="(min-width: 768px) 220px, 45vw"
-                    className="mb-3 sm:mb-4 h-auto w-full object-contain transition-transform duration-500 group-hover:scale-105 md:w-[220px]"
+                    sizes="(min-width: 1024px) 16vw, (min-width: 640px) 33vw, 50vw"
+                    className="mb-3 sm:mb-4 h-auto w-full object-contain transition-transform duration-500 group-hover:scale-105"
                     placeholder="blur"
                     blurDataURL={BLUR_CREAM}
                   />
                 </div>
               )}
-              <h3 className="font-serif-alt text-[16px] sm:text-[20px] md:text-[26px] font-medium uppercase leading-tight text-[rgb(20,20,20)] transition-colors duration-300 group-hover:text-gold">
+              <h3 className="font-serif-alt text-[14px] sm:text-[18px] lg:text-[20px] text-center font-medium uppercase leading-tight text-[rgb(20,20,20)] transition-colors duration-300 group-hover:text-gold px-1">
                 {category.label}
               </h3>
               <Image
@@ -60,7 +60,7 @@ export default function ShopByCategory() {
                 width={463}
                 height={137}
                 aria-hidden="true"
-                className="mt-2 sm:mt-3 h-auto w-[100px] sm:w-[120px] md:w-[140px]"
+                className="mt-2 sm:mt-3 h-auto w-[80px] sm:w-[100px] lg:w-[120px]"
               />
             </Link>
           ))}
