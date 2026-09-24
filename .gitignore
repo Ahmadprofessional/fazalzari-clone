@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ide & editor
+.idea/
+.vscode/
+
+# temp & backup files
+*.backup
+*.tmp
+scripts/compress-images.mjs
+scripts/optimize-all-images.mjs
