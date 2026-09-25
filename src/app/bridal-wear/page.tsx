@@ -31,8 +31,8 @@ export default function BridalWearPage() {
         </section>
         <section className="bg-cream py-10 sm:py-14 md:py-16">
           <div className="mx-auto grid max-w-7xl grid-cols-1 gap-5 sm:gap-8 px-4 sm:px-6 sm:grid-cols-2 lg:grid-cols-3">
-            {bridalWearProducts.map((p) => (
-              <ProductCard key={p.slug} product={p} />
+            {bridalWearProducts.map((p, index) => (
+              <ProductCard key={p.slug} product={p} priority={index < 6} />
             ))}
           </div>
           <p className="mt-10 text-center font-italic text-sm italic text-body-gray">

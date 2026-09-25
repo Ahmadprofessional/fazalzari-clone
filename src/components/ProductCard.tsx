@@ -5,7 +5,13 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { BLUR_CREAM } from "@/lib/blur";
 import { formatPrice } from "@/lib/utils";
 
-export default function ProductCard({ product }: { product: Product }) {
+export default function ProductCard({
+  product,
+  priority = false,
+}: {
+  product: Product;
+  priority?: boolean;
+}) {
   const price = formatPrice(product.price);
 
   return (
@@ -18,6 +24,7 @@ export default function ProductCard({ product }: { product: Product }) {
           src={product.images[0]}
           alt={product.name}
           fill
+          priority={priority}
           sizes="(min-width: 1280px) 380px, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
           placeholder="blur"

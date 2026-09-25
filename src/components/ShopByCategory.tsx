@@ -41,8 +41,9 @@ export default function ShopByCategory() {
                   <Image
                     src={category.image}
                     alt={category.label}
-                    width={702}
+                    width={688}
                     height={1024}
+                    priority
                     sizes="(min-width: 1024px) 16vw, (min-width: 640px) 33vw, 50vw"
                     className="mb-3 sm:mb-4 h-auto w-full object-contain transition-transform duration-500 group-hover:scale-105"
                     placeholder="blur"

@@ -106,8 +106,8 @@ export default function ProductCatalogFilter({ products }: ProductCatalogFilterP
 
       {/* Grid of Product Cards */}
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-5 sm:gap-8 px-4 sm:px-6 sm:grid-cols-2 lg:grid-cols-3">
-        {filteredProducts.map((p) => (
-          <ProductCard key={p.slug} product={p} />
+        {filteredProducts.map((p, index) => (
+          <ProductCard key={p.slug} product={p} priority={index < 6} />
         ))}
       </div>
 
