@@ -4,11 +4,11 @@ import type { CategoryCard } from "@/types/content";
 import { BLUR_CREAM } from "@/lib/blur";
 
 const CATEGORIES: CategoryCard[] = [
-  { label: "New Arrivals", image: "/images/category-new-arrivals.png", href: "/products?category=New+Arrivals" },
-  { label: "Bridal Wear", image: "/images/category-bridal.png", href: "/bridal-wear" },
-  { label: "Luxury Formals", image: "/images/category-formals.png", href: "/products?category=Luxury+Formals" },
-  { label: "Party Wear", image: "/images/category-ready-deliver.png", href: "/products?category=Party+Wear" },
-  { label: "Unstitched", image: "/images/category-unstitched.png", href: "/products?category=Unstitched" },
+  { label: "New Arrivals", image: "/images/categories/cat-new-arrivals.webp", href: "/products?category=New+Arrivals" },
+  { label: "Bridal Wear", image: "/images/categories/cat-bridal-wear.webp", href: "/bridal-wear" },
+  { label: "Luxury Formals", image: "/images/categories/cat-luxury-formals.webp", href: "/products?category=Luxury+Formals" },
+  { label: "Party Wear", image: "/images/categories/cat-party-wear.webp", href: "/products?category=Party+Wear" },
+  { label: "Unstitched", image: "/images/categories/cat-unstitched.webp", href: "/products?category=Unstitched" },
 ];
 
 export default function ShopByCategory() {

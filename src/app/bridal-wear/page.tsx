@@ -29,19 +29,17 @@ export default function BridalWearPage() {
             Home / Bridal Wear
           </p>
         </section>
-        <Reveal>
-          <section className="bg-cream py-10 sm:py-14 md:py-16">
-            <div className="mx-auto grid max-w-7xl grid-cols-1 gap-5 sm:gap-8 px-4 sm:px-6 sm:grid-cols-2 lg:grid-cols-3">
-              {bridalWearProducts.map((p) => (
-                <ProductCard key={p.slug} product={p} />
-              ))}
-            </div>
-            <p className="mt-10 text-center font-italic text-sm italic text-body-gray">
-              New bridal pieces are added regularly — message us on WhatsApp
-              to see the full collection.
-            </p>
-          </section>
-        </Reveal>
+        <section className="bg-cream py-10 sm:py-14 md:py-16">
+          <div className="mx-auto grid max-w-7xl grid-cols-1 gap-5 sm:gap-8 px-4 sm:px-6 sm:grid-cols-2 lg:grid-cols-3">
+            {bridalWearProducts.map((p) => (
+              <ProductCard key={p.slug} product={p} />
+            ))}
+          </div>
+          <p className="mt-10 text-center font-italic text-sm italic text-body-gray">
+            New bridal pieces are added regularly — message us on WhatsApp
+            to see the full collection.
+          </p>
+        </section>
       </main>
       <Footer />
     </>

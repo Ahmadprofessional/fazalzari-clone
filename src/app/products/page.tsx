@@ -27,21 +27,19 @@ export default function ProductsPage() {
           </p>
         </section>
 
-        <Reveal>
-          <section className="bg-cream py-10 sm:py-14 md:py-16">
-            <Suspense fallback={
-              <div className="py-20 text-center font-serif text-lg text-ink">
-                Loading collections...
-              </div>
-            }>
-              <ProductCatalogFilter products={products} />
-            </Suspense>
-            <p className="mt-12 text-center font-italic italic text-sm text-body-gray">
-              More pieces from our atelier are added regularly — message
-              us on WhatsApp for bespoke inquiries and orders.
-            </p>
-          </section>
-        </Reveal>
+        <section className="bg-cream py-10 sm:py-14 md:py-16">
+          <Suspense fallback={
+            <div className="py-20 text-center font-serif text-lg text-ink">
+              Loading collections...
+            </div>
+          }>
+            <ProductCatalogFilter products={products} />
+          </Suspense>
+          <p className="mt-12 text-center font-italic italic text-sm text-body-gray">
+            More pieces from our atelier are added regularly — message
+            us on WhatsApp for bespoke inquiries and orders.
+          </p>
+        </section>
       </main>
       <Footer />
     </>
