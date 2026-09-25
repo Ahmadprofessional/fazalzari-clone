@@ -269,8 +269,11 @@ export default function ProductGallery({ images, name }: ProductGalleryProps) {
           </div>
         </div>
 
-        {/* 4-Card Filmstrip Selector Below */}
-        <div className="grid grid-cols-4 gap-1.5 sm:gap-3">
+        {/* Filmstrip Selector Below */}
+        <div
+          className="grid gap-1.5 sm:gap-3"
+          style={{ gridTemplateColumns: `repeat(${images.length}, minmax(0, 1fr))` }}
+        >
           {images.map((img, idx) => {
             const isSelected = idx === activeIndex;
             const meta = VIEW_TITLES[idx];

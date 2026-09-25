@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function BridalWearPage() {
   const bridalWearProducts = products.filter(
-    (p) => p.category === "Bridal Wear"
+    (p) => p.category === "Bridal Wear" || p.categories?.includes("Bridal Wear")
   );
 
   return (

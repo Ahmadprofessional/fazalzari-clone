@@ -29,12 +29,11 @@ function YoutubeIcon(props: SVGProps<SVGSVGElement>) {
 }
 
 const QUICK_LINKS: QuickLink[] = [
-  { label: "New Arrivals", href: "/products" },
-  { label: "Bridal", href: "/bridal-wear" },
-  { label: "Formals", href: "/products" },
-  { label: "Jewellery", href: "/products" },
-  { label: "Unstitch", href: "/products" },
-  { label: "Ready To Deliver", href: "/products" },
+  { label: "New Arrivals", href: "/products?category=New+Arrivals" },
+  { label: "Bridal Wear", href: "/bridal-wear" },
+  { label: "Luxury Formals", href: "/products?category=Luxury+Formals" },
+  { label: "Party Wear", href: "/products?category=Party+Wear" },
+  { label: "Unstitched", href: "/products?category=Unstitched" },
 ];
 
 const SOCIAL_LINKS: SocialLink[] = [

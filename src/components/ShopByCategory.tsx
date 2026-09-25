@@ -4,12 +4,11 @@ import type { CategoryCard } from "@/types/content";
 import { BLUR_CREAM } from "@/lib/blur";
 
 const CATEGORIES: CategoryCard[] = [
-  { label: "New Arrivals", image: "/images/category-new-arrivals.png", href: "/products" },
+  { label: "New Arrivals", image: "/images/category-new-arrivals.png", href: "/products?category=New+Arrivals" },
   { label: "Bridal Wear", image: "/images/category-bridal.png", href: "/bridal-wear" },
-  { label: "Formals Wear", image: "/images/category-formals.png", href: "/products" },
-  { label: "Ready Deliver", image: "/images/category-ready-deliver.png", href: "/products" },
-  { label: "Unstitched", image: "/images/category-unstitched.png", href: "/products" },
-  { label: "Jewellery", image: "/images/category-jewellery.png", href: "/products" },
+  { label: "Luxury Formals", image: "/images/category-formals.png", href: "/products?category=Luxury+Formals" },
+  { label: "Party Wear", image: "/images/category-ready-deliver.png", href: "/products?category=Party+Wear" },
+  { label: "Unstitched", image: "/images/category-unstitched.png", href: "/products?category=Unstitched" },
 ];
 
 export default function ShopByCategory() {
@@ -30,7 +29,7 @@ export default function ShopByCategory() {
         </div>
 
         {/* Category cards */}
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6 sm:gap-6">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5 sm:gap-6">
           {CATEGORIES.map((category) => (
             <Link
               key={category.label}
