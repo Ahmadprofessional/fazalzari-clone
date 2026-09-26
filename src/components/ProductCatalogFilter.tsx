@@ -71,6 +71,22 @@ export default function ProductCatalogFilter({ products }: ProductCatalogFilterP
     return true;
   });
 
+  const getTabCount = (tabId: string): number => {
+    if (tabId === "all" || tabId === "new-arrivals" || tabId === "unstitched") {
+      return products.length;
+    }
+    if (tabId === "bridal-wear") {
+      return products.filter((p) => p.category === "Bridal Wear" || p.categories?.includes("Bridal Wear")).length;
+    }
+    if (tabId === "luxury-formals") {
+      return products.filter((p) => p.category === "Luxury Formals" || p.categories?.includes("Luxury Formals")).length;
+    }
+    if (tabId === "party-wear") {
+      return products.filter((p) => p.category === "Party Wear" || p.categories?.includes("Party Wear")).length;
+    }
+    return 0;
+  };
+
   return (
     <div className="w-full">
       {/* Category Navigation Tabs */}
@@ -90,15 +106,7 @@ export default function ProductCatalogFilter({ products }: ProductCatalogFilterP
               )}
             >
               {tab.label}
-              {tab.id === "all" || tab.id === "new-arrivals" || tab.id === "unstitched" ? (
-                <span className="ml-1.5 opacity-60 text-[11px]">({products.length})</span>
-              ) : tab.id === "bridal-wear" ? (
-                <span className="ml-1.5 opacity-60 text-[11px]">(4)</span>
-              ) : tab.id === "luxury-formals" ? (
-                <span className="ml-1.5 opacity-60 text-[11px]">(4)</span>
-              ) : tab.id === "party-wear" ? (
-                <span className="ml-1.5 opacity-60 text-[11px]">(4)</span>
-              ) : null}
+              <span className="ml-1.5 opacity-60 text-[11px]">({getTabCount(tab.id)})</span>
             </button>
           );
         })}

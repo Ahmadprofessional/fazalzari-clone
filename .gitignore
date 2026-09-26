@@ -47,5 +47,7 @@ next-env.d.ts
 # temp & backup files
 *.backup
 *.tmp
+scratch*
+.tempmediaStorage
 scripts/compress-images.mjs
 scripts/optimize-all-images.mjs

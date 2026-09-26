@@ -58,6 +58,31 @@ export const products: Product[] = [
       "Hand-embroidered by master artisans in Faisalabad. Pure Silk. Available stitched or unstitched.",
   },
   {
+    slug: "plum-embroidered-kurta-lehenga",
+    name: "Plum Embroidered Kurta Lehenga",
+    category: "Bridal Wear",
+    categories: ["New Arrivals", "Unstitched", "Bridal Wear", "Luxury Formals"],
+    price: 350000,
+    currency: "PKR",
+    images: [
+      "/images/products/plum-embroidered-kurta-lehenga/img-1.webp",
+      "/images/products/plum-embroidered-kurta-lehenga/img-2.webp",
+      "/images/products/plum-embroidered-kurta-lehenga/img-3.webp",
+      "/images/products/plum-embroidered-kurta-lehenga/img-4.webp",
+    ],
+    highlights: [
+      "Fabric: 100% Pure Raw Silk kurta, flared lehenga, and coordinating sheer veil",
+      "Work detail: Antique gold Zardozi, sparkling crystals, fine kattdana cut-beads, and metallic tilla threadwork",
+      "Heavily embellished straight kurta with opulent floral and geometric jaal",
+      "Flared kalidaar lehenga with elaborate architectural scalloped border and magnificent train",
+      "Statement dupatta with ornate four-sided embroidered borders and delicate spray motifs",
+    ],
+    description:
+      "An opulent bridal masterpiece rendered in rich plum pure raw silk. This majestic ensemble pairs an intricately hand-embroidered straight kurta with a sweeping flared lehenga featuring an elaborate architectural scalloped border and regal train. Accompanied by a coordinating sheer dupatta adorned with fine zardozi and kattdana beadwork.",
+    productionNote:
+      "Hand-embroidered by master artisans in Faisalabad. 100% Pure Silk. Available as unstitched fabric or bespoke custom stitched.",
+  },
+  {
     slug: "champagne-embroidered-anarkali-lehenga",
     name: "Champagne Embroidered Anarkali Lehenga",
     category: "Bridal Wear",
