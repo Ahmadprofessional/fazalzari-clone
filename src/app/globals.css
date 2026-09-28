@@ -143,6 +143,60 @@
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
+    @apply font-sans scroll-smooth;
   }
+}
+
+/* =========================================================================
+   SILK DRAPE COUTURE SCROLL ANIMATIONS (60 FPS GPU-Composited)
+   Uses translate3d & opacity only — zero layout reflows, lightning fast.
+   ========================================================================= */
+
+.silk-reveal-hidden {
+  opacity: 0;
+  transform: translate3d(0, 32px, 0);
+  will-change: transform, opacity;
+}
+
+.silk-reveal-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: auto;
+}
+
+.silk-scale-hidden {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0) scale(0.96);
+  will-change: transform, opacity;
+}
+
+.silk-scale-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: auto;
+}
+
+/* Subtle gold shimmer wave for luxury accents */
+@keyframes goldGlint {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-gold-glint {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(232, 198, 134, 0.35) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: goldGlint 3s infinite ease-in-out;
 }

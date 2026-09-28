@@ -15,8 +15,12 @@ export default function ExclusiveLookbook() {
         blurDataURL={BLUR_DARK}
       />
 
-      <div className="absolute inset-0 flex items-center">
-        <div className="max-w-md pl-5 sm:pl-6 md:pl-16 pr-4">
+      {/* Light dark overlay: darker on left for text contrast, subtle over the models */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent" />
+      <div className="absolute inset-0 bg-black/15" />
+
+      <div className="relative z-10 flex h-full items-center">
+        <div className="max-w-md pl-5 sm:pl-6 md:pl-16 pr-4 py-8">
           <p className="font-sans text-[14px] sm:text-[16px] md:text-[19px] font-medium leading-snug text-gold-muted">
             EXCLUSIVE LOOKBOOK
           </p>

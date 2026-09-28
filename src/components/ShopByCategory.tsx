@@ -1,14 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { CategoryCard } from "@/types/content";
+import Reveal from "@/components/Reveal";
 import { BLUR_CREAM } from "@/lib/blur";
 
-const CATEGORIES: CategoryCard[] = [
-  { label: "New Arrivals", image: "/images/categories/category-new-arrivals-arch.webp", href: "/products?category=New+Arrivals" },
-  { label: "Bridal Wear", image: "/images/categories/category-bridal-arch.webp", href: "/bridal-wear" },
-  { label: "Luxury Formals", image: "/images/categories/category-formals-arch.webp", href: "/products?category=Luxury+Formals" },
-  { label: "Party Wear", image: "/images/categories/category-party-arch.webp", href: "/products?category=Party+Wear" },
-  { label: "Unstitched", image: "/images/categories/category-unstitched-arch.webp", href: "/products?category=Unstitched" },
+const CATEGORIES = [
+  {
+    label: "New Arrivals",
+    image: "/images/products/champagne-embroidered-anarkali-lehenga/img-1.webp",
+    href: "/products?category=New+Arrivals",
+  },
+  {
+    label: "Bridal Wear",
+    image: "/images/products/scarlet-embroidered-bridal-lehenga/img-1.webp",
+    href: "/bridal-wear",
+  },
+  {
+    label: "Luxury Formals",
+    image: "/images/products/beige-embroidered-maxi-anarkali/img-1.webp",
+    href: "/products?category=Luxury+Formals",
+  },
+  {
+    label: "Party Wear",
+    image: "/images/products/peach-embroidered-maxi/img-1.webp",
+    href: "/products?category=Party+Wear",
+  },
+  {
+    label: "Unstitched",
+    image: "/images/products/emerald-green-embroidered-kurta/img-2.webp",
+    href: "/products?category=Unstitched",
+  },
 ];
 
 export default function ShopByCategory() {
@@ -16,53 +36,68 @@ export default function ShopByCategory() {
     <section className="bg-cream w-full">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 py-12 sm:py-16 md:py-20 text-center">
         {/* Heading with flourish dividers */}
-        <div className="mb-4 flex items-center justify-center gap-3 sm:gap-4">
-          <span className="relative hidden h-px w-20 bg-gold-border sm:inline-block">
-            <span className="absolute left-1/2 top-1/2 size-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold" />
-          </span>
-          <h2 className="font-serif-alt text-[26px] sm:text-[34px] md:text-[42px] font-medium leading-tight text-[#0a0a0a]">
-            SHOP BY CATEGORY
-          </h2>
-          <span className="relative hidden h-px w-20 bg-gold-border sm:inline-block">
-            <span className="absolute left-1/2 top-1/2 size-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold" />
-          </span>
-        </div>
+        <Reveal variant="fade-up">
+          <div className="mb-8 sm:mb-10 flex items-center justify-center gap-3 sm:gap-4">
+            <span className="relative hidden h-px w-20 bg-gold-border sm:inline-block">
+              <span className="absolute left-1/2 top-1/2 size-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold" />
+            </span>
+            <h2 className="font-serif-alt text-[26px] sm:text-[34px] md:text-[42px] font-medium leading-tight text-[#0a0a0a]">
+              SHOP BY CATEGORY
+            </h2>
+            <span className="relative hidden h-px w-20 bg-gold-border sm:inline-block">
+              <span className="absolute left-1/2 top-1/2 size-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold" />
+            </span>
+          </div>
+        </Reveal>
 
-        {/* Category cards */}
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5 sm:gap-6">
-          {CATEGORIES.map((category) => (
-            <Link
+        {/* Category cards — modern rounded design with staggered cascade */}
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5 sm:gap-5">
+          {CATEGORIES.map((category, index) => (
+            <Reveal
               key={category.label}
-              href={category.href}
-              className="group flex w-full flex-col items-center transition-transform duration-300 hover:-translate-y-1"
+              delay={index * 80}
+              variant="fade-up"
             >
-              {category.image && (
-                <div className="w-full overflow-hidden">
-                  <Image
-                    src={category.image}
-                    alt={category.label}
-                    width={688}
-                    height={1024}
-                    priority
-                    sizes="(min-width: 1024px) 16vw, (min-width: 640px) 33vw, 50vw"
-                    className="mb-3 sm:mb-4 h-auto w-full object-contain transition-transform duration-500 group-hover:scale-105"
-                    placeholder="blur"
-                    blurDataURL={BLUR_CREAM}
-                  />
+              <Link
+                href={category.href}
+                className="group relative flex flex-col items-center"
+              >
+                {/* Card container */}
+                <div className="relative w-full overflow-hidden rounded-[16px] sm:rounded-[20px] border border-gold-border/40 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:shadow-gold/10 group-hover:border-gold/60">
+                  {/* Aspect ratio container */}
+                  <div className="relative aspect-[3/4] w-full overflow-hidden">
+                    <Image
+                      src={category.image}
+                      alt={category.label}
+                      fill
+                      priority
+                      sizes="(min-width: 1024px) 18vw, (min-width: 640px) 33vw, 50vw"
+                      className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-110"
+                      placeholder="blur"
+                      blurDataURL={BLUR_CREAM}
+                    />
+
+                    {/* Gradient overlay — elegant bottom fade */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent transition-opacity duration-500 group-hover:from-black/80" />
+
+                    {/* Subtle gold corner accents */}
+                    <div className="absolute left-2.5 top-2.5 h-6 w-6 border-l-[1.5px] border-t-[1.5px] border-gold/50 rounded-tl-[4px] transition-all duration-500 group-hover:h-8 group-hover:w-8 group-hover:border-gold/80" />
+                    <div className="absolute right-2.5 top-2.5 h-6 w-6 border-r-[1.5px] border-t-[1.5px] border-gold/50 rounded-tr-[4px] transition-all duration-500 group-hover:h-8 group-hover:w-8 group-hover:border-gold/80" />
+                    <div className="absolute bottom-2.5 left-2.5 h-6 w-6 border-l-[1.5px] border-b-[1.5px] border-gold/50 rounded-bl-[4px] transition-all duration-500 group-hover:h-8 group-hover:w-8 group-hover:border-gold/80" />
+                    <div className="absolute bottom-2.5 right-2.5 h-6 w-6 border-r-[1.5px] border-b-[1.5px] border-gold/50 rounded-br-[4px] transition-all duration-500 group-hover:h-8 group-hover:w-8 group-hover:border-gold/80" />
+
+                    {/* Label at bottom */}
+                    <div className="absolute inset-x-0 bottom-0 flex flex-col items-center pb-4 sm:pb-5">
+                      <h3 className="font-serif-alt text-[13px] sm:text-[15px] lg:text-[17px] font-semibold uppercase tracking-[0.12em] text-white drop-shadow-md transition-all duration-300 group-hover:tracking-[0.18em]">
+                        {category.label}
+                      </h3>
+                      {/* Thin gold underline that expands on hover */}
+                      <span className="mt-1.5 block h-[1.5px] w-6 bg-gold/70 transition-all duration-500 group-hover:w-12 group-hover:bg-gold" />
+                    </div>
+                  </div>
                 </div>
-              )}
-              <h3 className="font-serif-alt text-[14px] sm:text-[18px] lg:text-[20px] text-center font-medium uppercase leading-tight text-[rgb(20,20,20)] transition-colors duration-300 group-hover:text-gold px-1">
-                {category.label}
-              </h3>
-              <Image
-                src="/images/divider-category.png"
-                alt=""
-                width={463}
-                height={137}
-                aria-hidden="true"
-                className="mt-2 sm:mt-3 h-auto w-[80px] sm:w-[100px] lg:w-[120px]"
-              />
-            </Link>
+              </Link>
+            </Reveal>
           ))}
         </div>
       </div>

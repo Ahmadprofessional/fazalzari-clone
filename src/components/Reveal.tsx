@@ -1,44 +1,80 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import type { ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 interface RevealProps {
   children: ReactNode;
   className?: string;
-  delay?: number;
+  delay?: number; // Delay in milliseconds (e.g. for staggered grid reveals: 100, 200, 300...)
+  variant?: "fade-up" | "scale" | "fade";
+  threshold?: number;
 }
 
-export default function Reveal({ children, className, delay = 0 }: RevealProps) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
+export default function Reveal({
+  children,
+  className,
+  delay = 0,
+  variant = "fade-up",
+  threshold = 0.12,
+}: RevealProps) {
+  const [isVisible, setIsVisible] = useState(false);
+  const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const el = ref.current;
+    const el = elementRef.current;
     if (!el) return;
+
+    // Check if user prefers reduced motion
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setIsVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
+          setIsVisible(true);
+          // Unobserve immediately after triggering to free memory & CPU
+          observer.unobserve(el);
         }
       },
-      { threshold: 0, rootMargin: "150px 0px" }
+      {
+        threshold,
+        rootMargin: "0px 0px -40px 0px",
+      }
     );
+
     observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [threshold]);
+
+  const variantHiddenClass = {
+    "fade-up": "silk-reveal-hidden",
+    "scale": "silk-scale-hidden",
+    "fade": "opacity-0",
+  }[variant];
+
+  const variantVisibleClass = {
+    "fade-up": "silk-reveal-visible",
+    "scale": "silk-scale-visible",
+    "fade": "opacity-100 transition-opacity duration-700 ease-out",
+  }[variant];
 
   return (
     <div
-      ref={ref}
+      ref={elementRef}
+      style={{
+        transitionDelay: delay > 0 ? `${delay}ms` : undefined,
+      }}
       className={cn(
-        "transition-all duration-700 ease-out",
-        visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0",
+        "w-full",
+        isVisible ? variantVisibleClass : variantHiddenClass,
         className
       )}
-      style={{ transitionDelay: visible ? `${delay}ms` : "0ms" }}
     >
       {children}
     </div>

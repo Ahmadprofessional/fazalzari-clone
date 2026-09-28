@@ -85,7 +85,7 @@ export default async function ProductDetailPage({
       },
     },
     category: product.category,
-    material: "100% Pure Silk",
+    material: "Pure Silk",
   };
 
   return (

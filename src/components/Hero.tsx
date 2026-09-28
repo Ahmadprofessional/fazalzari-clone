@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="relative flex min-h-[75vh] sm:min-h-[85vh] w-full items-center overflow-hidden bg-ink py-16 sm:py-20 md:py-24 lg:py-32">
       <Image
         src="/images/hero-bg.jpeg"
-        alt="Chandelier and mirrored boutique interior at Fazal Zari"
+        alt="Fazal Zari Heritage Luxury Bridal Couture"
         fill
         priority
         sizes="100vw"
@@ -16,11 +16,12 @@ export default function Hero() {
         blurDataURL={BLUR_DARK}
       />
 
-      {/* Subtle bottom-to-top gradient, low opacity, only to help type contrast */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+      {/* Light dark overlay: darker on left for rich text contrast, subtle on right to keep the model & palace bright */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-black/15" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/25" />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-6 md:px-10">
-        <div className="max-w-[600px]">
+        <div className="max-w-[620px]">
           <Image
             src="/images/divider-hero.png"
             alt=""

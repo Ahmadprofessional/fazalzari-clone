@@ -12,7 +12,7 @@ import { BLUR_DARK } from "@/lib/blur";
 export const metadata: Metadata = {
   title: "Contact Us — Book a Bridal Consultation",
   description:
-    "Visit Fazal Zari at BANO Market, Kotwali Road, Faisalabad or call +92 300 9736020. Schedule a personal bridal consultation today.",
+    "Visit Fazal Zari at Shop # 4, 5 St. # 10, New Bano Bazar, Faisalabad or call +92 300 9736020. Schedule a personal bridal consultation today.",
   alternates: { canonical: "/contact-us" },
 };
 
@@ -119,8 +119,8 @@ export default function ContactUsPage() {
                         Visit Our Boutique
                       </h3>
                       <p className="mt-1 font-sans text-sm leading-[22px] text-body-gray">
-                        BANO Market, Kotwali Road, Near MCB Bank Sop Market
-                        Branch, Clock Tower, Faisalabad, Pakistan
+                        Shop # 4, 5 St. # 10, New Bano Bazar, Faisalabad,
+                        Pakistan
                       </p>
                     </div>
                   </li>
@@ -139,10 +139,16 @@ export default function ContactUsPage() {
                           +92 300 9736020
                         </a>
                         <a
-                          href="tel:+923207635020"
+                          href="tel:+923216066906"
                           className="transition-colors duration-300 hover:text-gold"
                         >
-                          +92 320 7635020
+                          +92 321 6066906
+                        </a>
+                        <a
+                          href="tel:0412600463"
+                          className="transition-colors duration-300 hover:text-gold"
+                        >
+                          041-2600463 (PTCL)
                         </a>
                       </p>
                     </div>
@@ -174,7 +180,7 @@ export default function ContactUsPage() {
                       <p className="mt-1 font-sans text-sm leading-[22px] text-body-gray">
                         Monday &ndash; Saturday
                         <br />
-                        10:00 AM &ndash; 8:00 PM
+                        11:00 AM &ndash; 9:00 PM
                       </p>
                     </div>
                   </li>

@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+*.log
 
 # debug
 npm-debug.log*
@@ -43,11 +44,29 @@ next-env.d.ts
 # ide & editor
 .idea/
 .vscode/
+.claude/
+CLAUDE.md
+AGENTS.md
+.gemini/
+.system_generated/
 
 # temp & backup files
 *.backup
 *.tmp
 scratch*
-.tempmediaStorage
+.tempmediaStorage/
+
+# utility generation scripts
 scripts/compress-images.mjs
 scripts/optimize-all-images.mjs
+scripts/build-hero-bg.js
+scripts/build-lookbook-banner.js
+scripts/composite_hero_palace.py
+scripts/create_hero.py
+scripts/download-assets*.mjs
+
+# raw uncompressed photo staging folders
+public/images/*-m/
+public/images/fazalZari all 16 Products/
+public/images/Plum Embroidered Kurta Lehenga New product*/
+*.jfif

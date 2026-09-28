@@ -120,18 +120,31 @@ export default function Footer() {
             <li className="flex items-start gap-3">
               <MapPin className="mt-0.5 size-4 shrink-0 text-gold" />
               <span className="font-sans text-sm text-body-gray">
-                BANO market, Kotwali Rd, near MCB Bank Soap Market Branch,
-                Clock Tower, Faisalabad, Pakistan
+                Shop # 4, 5 St. # 10, New Bano Bazar, Faisalabad, Pakistan
               </span>
             </li>
-            <li className="flex items-center gap-3">
-              <Phone className="size-4 shrink-0 text-gold" />
-              <a
-                href="tel:+923009736020"
-                className="font-sans text-sm text-body-gray transition-colors duration-300 hover:text-gold"
-              >
-                +92 300 9736020
-              </a>
+            <li className="flex items-start gap-3">
+              <Phone className="size-4 shrink-0 text-gold mt-0.5" />
+              <div className="flex flex-col font-sans text-sm text-body-gray">
+                <a
+                  href="tel:+923009736020"
+                  className="transition-colors duration-300 hover:text-gold"
+                >
+                  +92 300 9736020
+                </a>
+                <a
+                  href="tel:+923216066906"
+                  className="transition-colors duration-300 hover:text-gold"
+                >
+                  +92 321 6066906
+                </a>
+                <a
+                  href="tel:0412600463"
+                  className="transition-colors duration-300 hover:text-gold"
+                >
+                  041-2600463 (PTCL)
+                </a>
+              </div>
             </li>
             <li className="flex items-center gap-3">
               <Mail className="size-4 shrink-0 text-gold" />

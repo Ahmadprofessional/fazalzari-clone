@@ -114,7 +114,7 @@ const organizationJsonLd = {
   address: {
     "@type": "PostalAddress",
     streetAddress:
-      "BANO Market, Kotwali Road, Near MCB Bank Soap Market Branch, Clock Tower",
+      "Shop # 4, 5 St. # 10, New Bano Bazar",
     addressLocality: "Faisalabad",
     addressCountry: "PK",
   },

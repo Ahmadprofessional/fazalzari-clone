@@ -34,7 +34,7 @@ const securityHeaders = [
       "font-src 'self' fonts.gstatic.com data:",
       "img-src 'self' data: blob: https:",
       "frame-src maps.google.com *.google.com",
-      "connect-src 'self' wa.me *.wa.me",
+      "connect-src 'self' wa.me *.wa.me ws: wss: http://localhost:* ws://localhost:*",
     ].join("; "),
   },
 ];

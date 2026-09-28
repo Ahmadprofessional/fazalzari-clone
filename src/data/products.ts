@@ -3,7 +3,7 @@ import type { Product } from "@/types/content";
 /**
  * Fazal Zari Master Product Catalog (16 Pieces)
  * Authentically crafted with client specifications:
- * - Fabrics: 100% Pure Silk (Raw Silk, Tissue, Organza, Silk Net)
+ * - Fabrics: Pure Silk (Raw Silk, Tissue, Organza, Silk Net)
  * - Work Detail: Handcrafted Zardozi, Crystal, Kattdana (cutdana), Pearl (moti), Resham threadwork
  * - Optimized High-Performance WebP Imagery
  * - Primary thumbnail (images[0]) is ALWAYS a complete head-to-toe full length view
@@ -18,12 +18,12 @@ export const products: Product[] = [
     price: 385000,
     currency: "PKR",
     images: [
-      "/images/products/scarlet-embroidered-bridal-lehenga/img-3.webp",
-      "/images/products/scarlet-embroidered-bridal-lehenga/img-2.webp",
       "/images/products/scarlet-embroidered-bridal-lehenga/img-1.webp",
+      "/images/products/scarlet-embroidered-bridal-lehenga/img-2.webp",
+      "/images/products/scarlet-embroidered-bridal-lehenga/img-3.webp",
     ],
     highlights: [
-      "Fabric: 100% Pure Raw Silk with delicate sheer organza veil",
+      "Fabric: Pure Raw Silk with delicate sheer organza veil",
       "Work detail: Grand Zardozi, crystals, kattdana (cutdana beads), and fine resham needlework",
       "Voluminous flared kalidaar lehenga with hand-scalloped floral border",
       "Heavily embellished choli with elaborate jewel neckline and back detailing",
@@ -32,7 +32,7 @@ export const products: Product[] = [
     description:
       "A majestic heirloom masterpiece for the traditional Barat bride. Cut from rich scarlet red pure silk, this magnificent bridal lehenga is laden with heritage zardozi, hand-placed crystals, kattdana cut-beads, and delicate resham floral jaal. Accompanied by an ethereal veil dupatta with ornate scalloped borders.",
     productionNote:
-      "Custom crafted to individual client measurements or available as unstitched fabric. 100% Pure Silk. Standard crafting: 12–16 weeks.",
+      "Custom crafted to individual client measurements or available as unstitched fabric. Pure Silk. Standard crafting: 12–16 weeks.",
   },
   {
     slug: "red-embroidered-lehenga",
@@ -46,7 +46,7 @@ export const products: Product[] = [
       "/images/products/red-embroidered-lehenga/img-2.webp",
     ],
     highlights: [
-      "Fabric: 100% Pure Silk lehenga and choli",
+      "Fabric: Pure Silk lehenga and choli",
       "Work detail: Traditional Zardozi, kattdana cut-beads, and micro pearl embellishments",
       "Flared silhouette with dense architectural border and botanical motifs",
       "Hand-embroidered choli with fine artisanal needlecraft",
@@ -60,8 +60,8 @@ export const products: Product[] = [
   {
     slug: "plum-embroidered-kurta-lehenga",
     name: "Plum Embroidered Kurta Lehenga",
-    category: "Bridal Wear",
-    categories: ["New Arrivals", "Unstitched", "Bridal Wear", "Luxury Formals"],
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 350000,
     currency: "PKR",
     images: [
@@ -71,7 +71,7 @@ export const products: Product[] = [
       "/images/products/plum-embroidered-kurta-lehenga/img-4.webp",
     ],
     highlights: [
-      "Fabric: 100% Pure Raw Silk kurta, flared lehenga, and coordinating sheer veil",
+      "Fabric: Pure Raw Silk kurta, flared lehenga, and coordinating sheer veil",
       "Work detail: Antique gold Zardozi, sparkling crystals, fine kattdana cut-beads, and metallic tilla threadwork",
       "Heavily embellished straight kurta with opulent floral and geometric jaal",
       "Flared kalidaar lehenga with elaborate architectural scalloped border and magnificent train",
@@ -80,13 +80,13 @@ export const products: Product[] = [
     description:
       "An opulent bridal masterpiece rendered in rich plum pure raw silk. This majestic ensemble pairs an intricately hand-embroidered straight kurta with a sweeping flared lehenga featuring an elaborate architectural scalloped border and regal train. Accompanied by a coordinating sheer dupatta adorned with fine zardozi and kattdana beadwork.",
     productionNote:
-      "Hand-embroidered by master artisans in Faisalabad. 100% Pure Silk. Available as unstitched fabric or bespoke custom stitched.",
+      "Hand-embroidered by master artisans in Faisalabad. Pure Silk. Available as unstitched fabric or bespoke custom stitched.",
   },
   {
     slug: "champagne-embroidered-anarkali-lehenga",
     name: "Champagne Embroidered Anarkali Lehenga",
-    category: "Bridal Wear",
-    categories: ["New Arrivals", "Unstitched", "Bridal Wear", "Luxury Formals"],
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 340000,
     currency: "PKR",
     images: [
@@ -104,13 +104,13 @@ export const products: Product[] = [
     description:
       "An ethereal couture bridal ensemble designed for Walima and Nikah ceremonies. Crafted in subtle champagne silk, laden with lustrous zardozi wires, shimmering crystals, and pearl clusters that capture light from every angle.",
     productionNote:
-      "Exclusively made to order or unstitched luxury fabric. 100% Pure Silk. Delivery: 12–14 weeks.",
+      "Exclusively made to order or unstitched luxury fabric. Pure Silk. Delivery: 12–14 weeks.",
   },
   {
     slug: "dusty-rose-embroidered-pishwas-lehenga",
     name: "Dusty Rose Embroidered Pishwas Lehenga",
-    category: "Bridal Wear",
-    categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 310000,
     currency: "PKR",
     images: [
@@ -126,7 +126,7 @@ export const products: Product[] = [
     description:
       "Romance meets high couture in this dusty rose pishwas lehenga. Built on a pure silk base, it showcases cascading floral arabesques wrought in lustrous zardozi, fine cutdana, and natural seed pearls.",
     productionNote:
-      "Custom tailored or available unstitched. 100% Pure Silk. Crafting timeline: 10–12 weeks.",
+      "Custom tailored or available unstitched. Pure Silk. Crafting timeline: 10–12 weeks.",
   },
   {
     slug: "rose-gold-embroidered-maxi",
@@ -164,7 +164,7 @@ export const products: Product[] = [
       "/images/products/beige-embroidered-maxi-anarkali/img-4.webp",
     ],
     highlights: [
-      "Fabric: 100% Pure Silk organza and raw silk foundation",
+      "Fabric: Pure Silk organza and raw silk foundation",
       "Work detail: Delicate tone-on-tone Zardozi, glistening crystals, cutdana, and pearl motifs",
       "Grand sweeping silhouette with 360-degree all-over handwork",
       "Tailored jewel neckline with intricate sleeve cuff finishing",
@@ -182,8 +182,8 @@ export const products: Product[] = [
     price: 275000,
     currency: "PKR",
     images: [
-      "/images/products/taupe-embroidered-anarkali-lehenga/img-2.webp",
       "/images/products/taupe-embroidered-anarkali-lehenga/img-1.webp",
+      "/images/products/taupe-embroidered-anarkali-lehenga/img-2.webp",
     ],
     highlights: [
       "Fabric: Pure Raw Silk and sheer silk dupatta",
@@ -209,7 +209,7 @@ export const products: Product[] = [
       "/images/products/teal-embroidered-slit-sleeve-kurta/img-3.webp",
     ],
     highlights: [
-      "Fabric: 100% Pure Raw Silk with matching silk trousers and dupatta",
+      "Fabric: Pure Raw Silk with matching silk trousers and dupatta",
       "Work detail: Linear geometric Zardozi jaal, floral neckline, and kattdana beads",
       "Dramatic open slit sleeves with dense border embroidery",
       "Keyhole neckline feature with heirloom jewel motifs",
@@ -217,18 +217,18 @@ export const products: Product[] = [
     description:
       "Rich jewel tones meet architectural silhouettes. Cut in deep teal pure silk, this modern couture kurta features a signature keyhole neckline, vertical zardozi jaal, and open cape slit sleeves laden with gold kattdana.",
     productionNote:
-      "Hand-embroidered in Faisalabad. 100% Pure Silk. Available stitched or unstitched.",
+      "Hand-embroidered in Faisalabad. Pure Silk. Available stitched or unstitched.",
   },
   {
     slug: "magenta-embroidered-anarkali-lehenga",
     name: "Magenta Embroidered Anarkali Lehenga",
-    category: "Party Wear",
-    categories: ["New Arrivals", "Unstitched", "Party Wear"],
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 245000,
     currency: "PKR",
     images: [
-      "/images/products/magenta-embroidered-anarkali-lehenga/img-2.webp",
       "/images/products/magenta-embroidered-anarkali-lehenga/img-1.webp",
+      "/images/products/magenta-embroidered-anarkali-lehenga/img-2.webp",
     ],
     highlights: [
       "Fabric: Pure Silk raw silk base with tissue accents",
@@ -244,8 +244,8 @@ export const products: Product[] = [
   {
     slug: "muted-mauve-embroidered-lehenga",
     name: "Muted Mauve Embroidered Lehenga",
-    category: "Party Wear",
-    categories: ["New Arrivals", "Unstitched", "Party Wear"],
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 260000,
     currency: "PKR",
     images: [
@@ -254,7 +254,7 @@ export const products: Product[] = [
       "/images/products/muted-mauve-embroidered-lehenga/img-1.webp",
     ],
     highlights: [
-      "Fabric: 100% Pure Silk with sheer embellished dupatta",
+      "Fabric: Pure Silk with sheer embellished dupatta",
       "Work detail: Silver metallic Zardozi, kattdana beads, sequins, and pearl clusters",
       "Scalloped hemline featuring heritage floral bouquets and geometric frames",
       "Delicate pastel aesthetic perfect for modern wedding festivities",
@@ -262,7 +262,7 @@ export const products: Product[] = [
     description:
       "Soft elegance in a dusty mauve tone. Laden with hand-carved silver zardozi wires, shimmering beads, and micro-pearls, this ensemble balances contemporary romance with royal Pakistani heritage.",
     productionNote:
-      "Bespoke tailoring available or unstitched fabric set. 100% Pure Silk.",
+      "Bespoke tailoring available or unstitched fabric set. Pure Silk.",
   },
   {
     slug: "peach-embroidered-maxi",
@@ -312,8 +312,8 @@ export const products: Product[] = [
   {
     slug: "mint-green-embroidered-kurta-set",
     name: "Mint Green Embroidered Kurta Set",
-    category: "Unstitched",
-    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    category: "Party Wear",
+    categories: ["New Arrivals", "Unstitched", "Party Wear"],
     price: 145000,
     currency: "PKR",
     images: [
@@ -322,7 +322,7 @@ export const products: Product[] = [
       "/images/products/mint-green-embroidered-kurta-set/img-3.webp",
     ],
     highlights: [
-      "Fabric: 100% Pure Raw Silk 3-piece suit with embroidered dupatta",
+      "Fabric: Pure Raw Silk 3-piece suit with embroidered dupatta",
       "Work detail: Delicate gold and antique Zardozi, kattdana cut-beads, and resham floral spray",
       "Intricate daman and sleeve border embroideries",
       "Coordinating silk trouser fabric with embroidered patti",
@@ -330,12 +330,12 @@ export const products: Product[] = [
     description:
       "A serene mint green 3-piece luxury ensemble. Crafted from pure raw silk, featuring refined zardozi floral motifs and delicate kattdana along the neckline, sleeves, and hem. Accompanied by a coordinating embroidered dupatta.",
     productionNote:
-      "Available as a complete luxury 3-piece unstitched fabric set or custom stitched. 100% Pure Silk.",
+      "Available as a complete luxury 3-piece unstitched fabric set or custom stitched. Pure Silk.",
   },
   {
     slug: "powder-blue-embroidered-kurta-set",
     name: "Powder Blue Embroidered Kurta Set",
-    category: "Unstitched",
+    category: "Party Wear",
     categories: ["New Arrivals", "Unstitched", "Party Wear"],
     price: 155000,
     currency: "PKR",
@@ -345,7 +345,7 @@ export const products: Product[] = [
       "/images/products/powder-blue-embroidered-kurta-set/img-3.webp",
     ],
     highlights: [
-      "Fabric: 100% Pure Silk shirt, trousers, and organza dupatta",
+      "Fabric: Pure Silk shirt, trousers, and organza dupatta",
       "Work detail: Fine silver Zardozi, kattdana beads, crystals, and delicate moti (pearls)",
       "Statement neckline and all-over floral bootis",
       "Scalloped dupatta borders with hand-finished detailing",
@@ -353,13 +353,13 @@ export const products: Product[] = [
     description:
       "Ethereal powder blue pure silk 3-piece suit adorned with shimmering silver zardozi, crystalline cut-beads, and micro pearls. A sophisticated choice for daytime celebrations and festive gatherings.",
     productionNote:
-      "Luxury unstitched 3-piece set or bespoke custom stitched. 100% Pure Silk.",
+      "Luxury unstitched 3-piece set or bespoke custom stitched. Pure Silk.",
   },
   {
     slug: "emerald-green-embroidered-kurta",
     name: "Emerald Green Embroidered Kurta",
-    category: "Unstitched",
-    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    category: "Party Wear",
+    categories: ["New Arrivals", "Unstitched", "Party Wear"],
     price: 165000,
     currency: "PKR",
     images: [
@@ -368,7 +368,7 @@ export const products: Product[] = [
       "/images/products/emerald-green-embroidered-kurta/img-1.webp",
     ],
     highlights: [
-      "Fabric: 100% Pure Raw Silk straight shirt with coordinating trousers",
+      "Fabric: Pure Raw Silk straight shirt with coordinating trousers",
       "Work detail: Gold Zardozi floral jaal, kattdana, and resham threadwork",
       "Dense all-over floral jaal across front and back",
       "Hand-embroidered sleeve cuffs and hemline border",
@@ -376,12 +376,12 @@ export const products: Product[] = [
     description:
       "Rendered in rich emerald green pure raw silk, this timeless shirt features an all-over floral jaal hand-embroidered with classic gold zardozi and delicate kattdana cut-beads. Perfect for Mehndi and festive occasions.",
     productionNote:
-      "Available as unstitched fabric or custom tailored. 100% Pure Silk.",
+      "Available as unstitched fabric or custom tailored. Pure Silk.",
   },
   {
     slug: "plum-embroidered-kurta-set",
     name: "Plum Embroidered Kurta Set",
-    category: "Unstitched",
+    category: "Party Wear",
     categories: ["New Arrivals", "Unstitched", "Party Wear"],
     price: 150000,
     currency: "PKR",
@@ -399,6 +399,6 @@ export const products: Product[] = [
     description:
       "A jewel-toned plum raw silk luxury suit, featuring dense antique gold zardozi embroidery and kattdana beads. The rich color and heritage handcrafting make it an eye-catching ensemble for formal soirees.",
     productionNote:
-      "Luxury unstitched 3-piece fabric set or made to order. 100% Pure Silk.",
+      "Luxury unstitched 3-piece fabric set or made to order. Pure Silk.",
   },
 ];

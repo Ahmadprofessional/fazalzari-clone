@@ -4,6 +4,7 @@ import { useState, useTransition } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import type { Product } from "@/types/content";
 import ProductCard from "@/components/ProductCard";
+import Reveal from "@/components/Reveal";
 import { cn } from "@/lib/utils";
 
 const TABS = [
@@ -57,8 +58,8 @@ export default function ProductCatalogFilter({ products }: ProductCatalogFilterP
   // Filter products based on selected tab
   const filteredProducts = products.filter((p) => {
     if (activeTab === "all") return true;
-    if (activeTab === "new-arrivals") return true; // All 16 products are in New Arrivals
-    if (activeTab === "unstitched") return true; // All 16 products available as Unstitched
+    if (activeTab === "new-arrivals") return true;
+    if (activeTab === "unstitched") return true;
     if (activeTab === "bridal-wear") {
       return p.category === "Bridal Wear" || p.categories?.includes("Bridal Wear");
     }
@@ -112,10 +113,16 @@ export default function ProductCatalogFilter({ products }: ProductCatalogFilterP
         })}
       </div>
 
-      {/* Grid of Product Cards */}
+      {/* Grid of Product Cards with Staggered Scroll Reveal */}
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-5 sm:gap-8 px-4 sm:px-6 sm:grid-cols-2 lg:grid-cols-3">
         {filteredProducts.map((p, index) => (
-          <ProductCard key={p.slug} product={p} priority={index < 6} />
+          <Reveal
+            key={p.slug}
+            delay={(index % 3) * 100}
+            variant="fade-up"
+          >
+            <ProductCard product={p} priority={index < 6} />
+          </Reveal>
         ))}
       </div>
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ShopByCategory from "@/components/ShopByCategory";
+import FeaturedProducts from "@/components/FeaturedProducts";
 import ExclusiveLookbook from "@/components/ExclusiveLookbook";
 import FeatureStrip from "@/components/FeatureStrip";
 import Footer from "@/components/Footer";
@@ -22,6 +23,9 @@ export default function Home() {
         <Hero />
         <Reveal>
           <ShopByCategory />
+        </Reveal>
+        <Reveal>
+          <FeaturedProducts />
         </Reveal>
         <Reveal>
           <ExclusiveLookbook />
