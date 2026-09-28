@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 interface RevealProps {
   children: ReactNode;
   className?: string;
-  delay?: number; // Delay in milliseconds (e.g. for staggered grid reveals: 100, 200, 300...)
+  delay?: number;
   variant?: "fade-up" | "scale" | "fade";
   threshold?: number;
 }
@@ -16,7 +16,7 @@ export default function Reveal({
   className,
   delay = 0,
   variant = "fade-up",
-  threshold = 0.12,
+  threshold = 0.01,
 }: RevealProps) {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
@@ -25,29 +25,34 @@ export default function Reveal({
     const el = elementRef.current;
     if (!el) return;
 
-    // Check if user prefers reduced motion
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (typeof window === "undefined" || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       setIsVisible(true);
       return;
     }
+
+    // Safety fallback: ensure content is ALWAYS visible on mobile devices even if scroll/observer delays
+    const fallbackTimer = setTimeout(() => {
+      setIsVisible(true);
+    }, 400);
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Unobserve immediately after triggering to free memory & CPU
+          clearTimeout(fallbackTimer);
           observer.unobserve(el);
         }
       },
       {
         threshold,
-        rootMargin: "0px 0px -40px 0px",
+        rootMargin: "120px 0px 120px 0px", // Pre-loads 120px ahead of viewport for smooth mobile scrolling
       }
     );
 
     observer.observe(el);
 
     return () => {
+      clearTimeout(fallbackTimer);
       observer.disconnect();
     };
   }, [threshold]);

@@ -6,7 +6,6 @@ import FeaturedProducts from "@/components/FeaturedProducts";
 import ExclusiveLookbook from "@/components/ExclusiveLookbook";
 import FeatureStrip from "@/components/FeatureStrip";
 import Footer from "@/components/Footer";
-import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Fazal Zari | Heritage Luxury, Handcrafted for Royalty",
@@ -17,22 +16,14 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="flex flex-1 flex-col">
+    <div className="flex flex-1 flex-col min-h-screen bg-background">
       <Header />
-      <main className="flex flex-1 flex-col">
+      <main className="flex flex-1 flex-col w-full">
         <Hero />
-        <Reveal>
-          <ShopByCategory />
-        </Reveal>
-        <Reveal>
-          <FeaturedProducts />
-        </Reveal>
-        <Reveal>
-          <ExclusiveLookbook />
-        </Reveal>
-        <Reveal>
-          <FeatureStrip />
-        </Reveal>
+        <ShopByCategory />
+        <FeaturedProducts />
+        <ExclusiveLookbook />
+        <FeatureStrip />
       </main>
       <Footer />
     </div>
