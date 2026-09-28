@@ -60,8 +60,8 @@ export const products: Product[] = [
   {
     slug: "plum-embroidered-kurta-lehenga",
     name: "Plum Embroidered Kurta Lehenga",
-    category: "Luxury Formals",
-    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    category: "Bridal Wear",
+    categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
     price: 350000,
     currency: "PKR",
     images: [
@@ -85,8 +85,8 @@ export const products: Product[] = [
   {
     slug: "champagne-embroidered-anarkali-lehenga",
     name: "Champagne Embroidered Anarkali Lehenga",
-    category: "Luxury Formals",
-    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    category: "Bridal Wear",
+    categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
     price: 340000,
     currency: "PKR",
     images: [
@@ -109,8 +109,8 @@ export const products: Product[] = [
   {
     slug: "dusty-rose-embroidered-pishwas-lehenga",
     name: "Dusty Rose Embroidered Pishwas Lehenga",
-    category: "Luxury Formals",
-    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    category: "Bridal Wear",
+    categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
     price: 310000,
     currency: "PKR",
     images: [
@@ -153,8 +153,8 @@ export const products: Product[] = [
   {
     slug: "beige-embroidered-maxi-anarkali",
     name: "Beige Embroidered Maxi Anarkali",
-    category: "Luxury Formals",
-    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    category: "Bridal Wear",
+    categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
     price: 280000,
     currency: "PKR",
     images: [
@@ -177,8 +177,8 @@ export const products: Product[] = [
   {
     slug: "taupe-embroidered-anarkali-lehenga",
     name: "Taupe Embroidered Anarkali Lehenga",
-    category: "Luxury Formals",
-    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    category: "Bridal Wear",
+    categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
     price: 275000,
     currency: "PKR",
     images: [
@@ -267,8 +267,8 @@ export const products: Product[] = [
   {
     slug: "peach-embroidered-maxi",
     name: "Peach Embroidered Maxi",
-    category: "Party Wear",
-    categories: ["New Arrivals", "Unstitched", "Party Wear"],
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 230000,
     currency: "PKR",
     images: [
@@ -290,8 +290,8 @@ export const products: Product[] = [
   {
     slug: "lilac-gray-embroidered-maxi",
     name: "Lilac Gray Embroidered Maxi",
-    category: "Party Wear",
-    categories: ["New Arrivals", "Unstitched", "Party Wear"],
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 220000,
     currency: "PKR",
     images: [

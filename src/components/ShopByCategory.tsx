@@ -16,12 +16,12 @@ const CATEGORIES = [
   },
   {
     label: "Luxury Formals",
-    image: "/images/products/beige-embroidered-maxi-anarkali/img-1.webp",
+    image: "/images/products/rose-gold-embroidered-maxi/img-2.webp",
     href: "/products?category=Luxury+Formals",
   },
   {
     label: "Party Wear",
-    image: "/images/products/peach-embroidered-maxi/img-1.webp",
+    image: "/images/products/powder-blue-embroidered-kurta-set/img-2.webp",
     href: "/products?category=Party+Wear",
   },
   {

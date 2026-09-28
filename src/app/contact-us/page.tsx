@@ -58,7 +58,7 @@ export default function ContactUsPage() {
       <Header />
       <main className="flex flex-1 flex-col">
         {/* 1. Page hero */}
-        <section className="relative flex min-h-[40vh] sm:min-h-[50vh] w-full items-center overflow-hidden bg-ink pt-32 pb-16 sm:pt-40 sm:pb-20">
+        <section className="relative flex min-h-[40vh] sm:min-h-[52vh] w-full items-center overflow-hidden bg-ink pt-32 pb-16 sm:pt-40 sm:pb-20">
           <Image
             src="/images/about-hero-bg.jpeg"
             alt="Fazal Zari bridal craftsmanship"
@@ -69,7 +69,9 @@ export default function ContactUsPage() {
             placeholder="blur"
             blurDataURL={BLUR_DARK}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+          {/* Light dark overlay for text contrast while keeping the royal palace and model bright */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-black/15" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/25" />
 
           <div className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-6 md:px-10">
             <div className="max-w-[600px]">

@@ -84,7 +84,7 @@ export default function AboutUsPage() {
       <Header />
       <main className="flex flex-1 flex-col">
         {/* 1. Page hero */}
-        <section className="relative flex min-h-[45vh] sm:min-h-[55vh] w-full items-center overflow-hidden bg-ink">
+        <section className="relative flex min-h-[45vh] sm:min-h-[55vh] w-full items-center overflow-hidden bg-ink pt-32 pb-16 sm:pt-40 sm:pb-20">
           <Image
             src="/images/about-hero-bg.jpeg"
             alt="Fazal Zari bridal craftsmanship"
@@ -95,7 +95,9 @@ export default function AboutUsPage() {
             placeholder="blur"
             blurDataURL={BLUR_DARK}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+          {/* Light dark overlay for text contrast while keeping the royal palace and model bright */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-black/15" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/25" />
 
           <div className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-6 md:px-10">
             <div className="max-w-[600px]">
@@ -126,91 +128,84 @@ export default function AboutUsPage() {
           </div>
         </section>
 
-        {/* 2. About Us intro */}
+        {/* 2. Brand Story */}
         <Reveal>
-          <section className="w-full bg-cream/40 py-12 sm:py-16 md:py-20">
-            <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 sm:gap-12 px-5 sm:px-6 md:grid-cols-2 md:px-10">
-              <div className="order-1">
+          <section className="bg-cream py-16 md:py-24">
+            <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2">
+              <div>
+                <SectionHeading>OUR STORY</SectionHeading>
+                <p className="mt-6 font-sans text-base leading-relaxed text-body-gray">
+                  For over two decades, Fazal Zari has been at the forefront of
+                  luxury bridal couture in Faisalabad. What started as a
+                  passion for traditional zardozi embroidery has blossomed
+                  into one of Pakistan&apos;s most sought-after bridal houses.
+                </p>
+                <p className="mt-4 font-sans text-base leading-relaxed text-body-gray">
+                  Each piece is meticulously handcrafted by our master artisans,
+                  blending age-old techniques with contemporary silhouettes. From
+                  intricate dabka and naqshi to sparkling crystals and pearls,
+                  every detail is placed with intention.
+                </p>
+                <p className="mt-4 font-italic text-base italic text-gold-muted">
+                  &ldquo;We don&apos;t just make dresses; we create heirlooms that
+                  are passed down through generations.&rdquo;
+                </p>
+              </div>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
                 <Image
                   src="/images/about-story.png"
-                  alt="Fazal Zari bridal artistry"
-                  width={500}
-                  height={333}
-                  sizes="(min-width: 768px) 500px, 100vw"
-                  className="h-auto w-full rounded-md object-cover"
+                  alt="Fazal Zari artisan at work"
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover"
                   placeholder="blur"
                   blurDataURL={BLUR_CREAM}
                 />
               </div>
-              <div className="order-2">
-                <span className="font-sans text-xs font-medium tracking-[0.2em] text-gold-muted uppercase">
-                  About Us
-                </span>
-                <h2 className="mt-3 font-serif text-[26px] sm:text-[32px] md:text-[36px] font-medium uppercase leading-[1.1] text-[#0a0a0a]">
-                  Our Story
-                </h2>
-                <p className="mt-6 font-sans text-base font-normal leading-[27px] text-body-gray">
-                  Fazal Zari was founded with a single vision: To preserve
-                  the richness of traditional Pakistani bridal craftsmanship
-                  while creating silhouettes for today&apos;s modern bride.
-                </p>
-                <p className="mt-5 font-sans text-base font-normal leading-[27px] text-body-gray">
-                  Every collection reflects months of meticulous artistry
-                  from selecting premium fabrics to intricate hand
-                  embellishments that honor generations of skilled
-                  craftsmanship.
+            </div>
+          </section>
+        </Reveal>
+
+        {/* 3. Stats */}
+        <section className="bg-ink py-16">
+          <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-6 md:grid-cols-4">
+            {stats.map((stat) => (
+              <div key={stat.label} className="text-center">
+                <Counter
+                  to={stat.to}
+                  suffix={stat.suffix}
+                  className="font-serif-alt text-4xl font-bold text-gold-light md:text-5xl"
+                />
+                <p className="mt-2 font-sans text-sm text-gray-400">
+                  {stat.label}
                 </p>
               </div>
-            </div>
-          </section>
-        </Reveal>
+            ))}
+          </div>
+        </section>
 
-        {/* 3. Pull-quote banner */}
+        {/* 4. Philosophy */}
         <Reveal>
-          <section className="relative flex w-full items-center overflow-hidden bg-ink py-16">
-            <Image
-              src="/images/about-quote-bg.jpeg"
-              alt=""
-              aria-hidden="true"
-              fill
-              sizes="100vw"
-              className="object-cover object-center"
-              placeholder="blur"
-              blurDataURL={BLUR_DARK}
-            />
-            <div className="absolute inset-0 bg-black/60" />
-            <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-              <p className="font-serif text-xl sm:text-2xl md:text-[34px] italic font-medium leading-[1.4] text-white">
-                &ldquo;Our brides wear more than beautiful garments. They
-                wear stories.&rdquo;
-              </p>
-            </div>
-          </section>
-        </Reveal>
-
-        {/* 4. Our Philosophy */}
-        <Reveal>
-          <section className="w-full bg-white py-12 sm:py-16 md:py-20">
-            <div className="mx-auto max-w-7xl px-5 sm:px-6 text-center md:px-10">
-              <SectionHeading>Our Philosophy</SectionHeading>
-
-              <div className="mt-8 sm:mt-12 grid grid-cols-1 gap-8 sm:gap-12 md:grid-cols-3 md:gap-8">
+          <section className="bg-cream py-16 md:py-24">
+            <div className="mx-auto max-w-7xl px-6 text-center">
+              <SectionHeading>OUR PHILOSOPHY</SectionHeading>
+              <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
                 {philosophy.map((item) => (
                   <div
                     key={item.title}
-                    className="flex flex-col items-center gap-4 text-center"
+                    className="flex flex-col items-center rounded-lg border border-gold-border/40 bg-white p-8 shadow-sm"
                   >
                     <Image
                       src={item.icon}
-                      alt={item.title}
-                      width={64}
-                      height={64}
-                      className="h-16 w-16 object-contain"
+                      alt=""
+                      width={48}
+                      height={48}
+                      className="mb-4"
                     />
-                    <h3 className="font-serif text-xl font-semibold uppercase leading-6 text-[#0a0a0a]">
+                    <h3 className="font-serif-alt text-xl font-bold text-ink">
                       {item.title}
                     </h3>
-                    <p className="max-w-[260px] font-sans text-sm font-normal leading-[21px] text-body-gray">
+                    <p className="mt-2 font-sans text-sm leading-relaxed text-body-gray">
                       {item.description}
                     </p>
                   </div>
@@ -220,73 +215,27 @@ export default function AboutUsPage() {
           </section>
         </Reveal>
 
-        {/* 5. Why Choose Fazal Zari */}
+        {/* 5. Why Choose Us */}
         <Reveal>
-          <section className="w-full bg-cream/40 py-12 sm:py-16 md:py-20">
-            <div className="mx-auto max-w-7xl px-5 sm:px-6 text-center md:px-10">
-              <SectionHeading>Why Choose Fazal Zari</SectionHeading>
-
-              <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <section className="bg-white py-16 md:py-24">
+            <div className="mx-auto max-w-7xl px-6">
+              <SectionHeading>WHY CHOOSE FAZAL ZARI</SectionHeading>
+              <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
                 {whyChoose.map((item) => (
-                  <div
-                    key={item.title}
-                    className="flex flex-col items-center gap-4 text-center"
-                  >
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      width={800}
-                      height={533}
-                      sizes="(min-width: 1024px) 220px, (min-width: 640px) 50vw, 100vw"
-                      className="h-[150px] w-[220px] rounded-md object-cover"
-                      placeholder="blur"
-                      blurDataURL={BLUR_CREAM}
-                    />
-                    <h3 className="font-serif text-xl font-semibold uppercase leading-6 text-[#0a0a0a]">
+                  <div key={item.title} className="text-center">
+                    <div className="relative mx-auto mb-4 h-24 w-24 overflow-hidden rounded-full bg-cream">
+                      <Image
+                        src={item.image}
+                        alt=""
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <h3 className="font-serif-alt text-lg font-bold text-ink">
                       {item.title}
                     </h3>
-                    <p className="max-w-[240px] font-sans text-sm font-normal leading-[21px] text-body-gray">
+                    <p className="mt-2 font-sans text-sm text-body-gray">
                       {item.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        </Reveal>
-
-        {/* 6. Trusted By Brides */}
-        <Reveal>
-          <section className="relative w-full overflow-hidden bg-ink py-20">
-            <Image
-              src="/images/about-trusted-by-brides.png"
-              alt=""
-              aria-hidden="true"
-              fill
-              sizes="100vw"
-              className="object-cover object-center opacity-10"
-            />
-            <div className="relative z-10 mx-auto max-w-7xl px-6 text-center md:px-10">
-              <span className="font-sans text-xs font-medium tracking-[0.2em] text-gold-muted uppercase">
-                Trusted By Brides
-              </span>
-              <h2 className="mt-3 font-serif text-[26px] sm:text-[32px] md:text-[36px] font-medium uppercase leading-[1.1] text-white">
-                Trusted By Brides
-              </h2>
-              <p className="mt-4 font-italic text-base italic font-normal leading-[27px] text-white/80">
-                Loved by brides across Pakistan.
-              </p>
-
-              <div className="mt-14 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-                {stats.map((stat) => (
-                  <div key={stat.label} className="flex flex-col items-center gap-2">
-                    <Counter
-                      to={stat.to}
-                      suffix={stat.suffix}
-                      className="font-serif text-[36px] sm:text-[42px] md:text-[48px] font-medium leading-none text-gold"
-                    />
-                    <p className="font-sans text-sm font-normal leading-[21px] text-white/70">
-                      {stat.label}
                     </p>
                   </div>
                 ))}
