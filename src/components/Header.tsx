@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, Search, User, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -144,27 +144,13 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Icons */}
-        <div className="flex items-center gap-5">
-          <button
-            type="button"
-            aria-label="Search"
-            className="text-white transition-colors duration-300 hover:text-gold"
-          >
-            <Search className="size-5" />
-          </button>
+        {/* Actions */}
+        <div className="flex items-center gap-4">
           <WhatsAppButton
             variant="inline"
             label=""
             className="text-white transition-colors duration-300 hover:text-[#25D366]"
           />
-          <button
-            type="button"
-            aria-label="Account"
-            className="hidden text-white transition-colors duration-300 hover:text-gold md:block"
-          >
-            <User className="size-5" />
-          </button>
         </div>
       </div>
 

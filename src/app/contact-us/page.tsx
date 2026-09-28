@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import type { SVGProps } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
@@ -15,36 +14,6 @@ export const metadata: Metadata = {
     "Visit Fazal Zari at Shop # 4, 5 St. # 10, New Bano Bazar, Faisalabad or call +92 300 9736020. Schedule a personal bridal consultation today.",
   alternates: { canonical: "/contact-us" },
 };
-
-function FacebookIcon(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
-      <path d="M13.5 21v-7.5h2.5l.5-3H13.5V8.5c0-.87.24-1.46 1.49-1.46H16.6V4.35C16.3 4.31 15.28 4.22 14.1 4.22c-2.46 0-4.15 1.5-4.15 4.26V10.5H7.4v3h2.55V21h3.55Z" />
-    </svg>
-  );
-}
-
-function XIcon(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
-      <path d="M4 3h3.6l4.2 5.6L16.6 3H20l-6.2 7.8L20.4 21h-3.6l-4.6-6.1L7 21H3.6l6.6-8.3L4 3Z" />
-    </svg>
-  );
-}
-
-function YoutubeIcon(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
-      <path d="M21.6 7.6a2.7 2.7 0 0 0-1.9-1.9C18 5.2 12 5.2 12 5.2s-6 0-7.7.5A2.7 2.7 0 0 0 2.4 7.6 28 28 0 0 0 2 12a28 28 0 0 0 .4 4.4 2.7 2.7 0 0 0 1.9 1.9c1.7.5 7.7.5 7.7.5s6 0 7.7-.5a2.7 2.7 0 0 0 1.9-1.9A28 28 0 0 0 22 12a28 28 0 0 0-.4-4.4ZM10 15V9l5.2 3-5.2 3Z" />
-    </svg>
-  );
-}
-
-const SOCIAL_LINKS = [
-  { label: "Facebook", href: "#", Icon: FacebookIcon },
-  { label: "X", href: "#", Icon: XIcon },
-  { label: "YouTube", href: "#", Icon: YoutubeIcon },
-];
 
 const TRUST_BADGES = [
   { icon: "/images/icon-plane.png", label: "FREE SHIPPING" },
@@ -188,21 +157,6 @@ export default function ContactUsPage() {
                   </li>
                 </ul>
 
-                <h3 className="mt-10 font-serif text-sm font-bold uppercase tracking-[0.15em] text-gold-muted">
-                  Follow Us
-                </h3>
-                <div className="mt-4 flex gap-3">
-                  {SOCIAL_LINKS.map(({ label, href, Icon }) => (
-                    <a
-                      key={label}
-                      href={href}
-                      aria-label={label}
-                      className="flex h-9 w-9 items-center justify-center rounded-full border border-gold-border text-body-gray transition-colors duration-300 hover:border-gold hover:text-gold"
-                    >
-                      <Icon className="size-4" />
-                    </a>
-                  ))}
-                </div>
               </div>
 
               {/* Right column */}
