@@ -57,16 +57,12 @@ scratch*
 .tempmediaStorage/
 
 # utility generation scripts
-scripts/compress-images.mjs
-scripts/optimize-all-images.mjs
-scripts/build-hero-bg.js
-scripts/build-lookbook-banner.js
-scripts/composite_hero_palace.py
-scripts/create_hero.py
-scripts/download-assets*.mjs
+scripts/
 
 # raw uncompressed photo staging folders
 public/images/*-m/
 public/images/fazalZari all 16 Products/
 public/images/Plum Embroidered Kurta Lehenga New product*/
+public/images/Newest Batch of FazalZari Products/
 *.jfif
+*.mp4

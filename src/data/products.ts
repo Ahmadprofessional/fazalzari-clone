@@ -401,4 +401,242 @@ export const products: Product[] = [
     productionNote:
       "Luxury unstitched 3-piece fabric set or made to order. Pure Silk.",
   },
+  {
+    slug: "maroon-embroidered-raw-silk-kurta-set",
+    name: "Maroon Embroidered Raw Silk Kurta Set",
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    price: 175000,
+    currency: "PKR",
+    images: [
+      "/images/products/maroon-embroidered-raw-silk-kurta-set/img-1.webp",
+      "/images/products/maroon-embroidered-raw-silk-kurta-set/img-2.webp",
+      "/images/products/maroon-embroidered-raw-silk-kurta-set/img-3.webp",
+      "/images/products/maroon-embroidered-raw-silk-kurta-set/img-4.webp",
+    ],
+    highlights: [
+      "Fabric: Pure Raw Silk shirt with gold brocade/jamawar trousers",
+      "Work detail: Heritage antique gold Zardozi, kattdana cut-beads, and floral resham motifs",
+      "Elaborate jewel neckline with symmetrical botanical jaal",
+      "Hand-scalloped daman and sleeve cuffs",
+    ],
+    description:
+      "A regal deep maroon pure raw silk straight shirt adorned with heritage antique gold zardozi floral bouquets, intricate neckline embroidery, and hand-placed kattdana. Paired with coordinating gold brocade trousers for formal celebrations.",
+    productionNote:
+      "Available as a complete luxury 2-piece unstitched fabric set or custom stitched. Pure Silk.",
+  },
+  {
+    slug: "rose-gold-tissue-embroidered-kurta-set",
+    name: "Rose Gold Tissue Embroidered Kurta Set",
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    price: 195000,
+    currency: "PKR",
+    images: [
+      "/images/products/rose-gold-tissue-embroidered-kurta-set/img-1.webp",
+      "/images/products/rose-gold-tissue-embroidered-kurta-set/img-2.webp",
+      "/images/products/rose-gold-tissue-embroidered-kurta-set/img-3.webp",
+      "/images/products/rose-gold-tissue-embroidered-kurta-set/img-4.webp",
+    ],
+    highlights: [
+      "Fabric: Pure Silk Tissue foundation with matching trousers and dupatta",
+      "Work detail: Linear vertical Zardozi jaal, ruby & emerald jewel stone highlights, and fine kattdana",
+      "Signature keyhole neckline feature with heirloom jewel motifs",
+      "Coordinating sheer dupatta with four-sided embroidered patti",
+    ],
+    description:
+      "Luminous rose gold tissue raw silk shirt featuring an ornate keyhole neckline, linear vertical zardozi jaal, and ruby and emerald jewel accents. Designed for timeless sophistication at formal evening soirees.",
+    productionNote:
+      "Handcrafted upon order or luxury unstitched fabric set. Pure Silk.",
+  },
+  {
+    slug: "black-embroidered-sleeveless-kurta",
+    name: "Black Embroidered Sleeveless Kurta",
+    category: "Party Wear",
+    categories: ["New Arrivals", "Unstitched", "Party Wear"],
+    price: 140000,
+    currency: "PKR",
+    images: [
+      "/images/products/black-embroidered-sleeveless-kurta/img-1.webp",
+      "/images/products/black-embroidered-sleeveless-kurta/img-2.webp",
+      "/images/products/black-embroidered-sleeveless-kurta/img-3.webp",
+      "/images/products/black-embroidered-sleeveless-kurta/img-4.webp",
+    ],
+    highlights: [
+      "Fabric: Pure Raw Silk straight shirt with sheer organza hemline accent",
+      "Work detail: Antique gold Zardozi medallion, scattered floral bootis, and micro-pearl edging",
+      "Contemporary sleeveless silhouette with structured tailored neckline",
+      "Coordinating silk trousers with embroidered border",
+    ],
+    description:
+      "An alluring midnight black pure raw silk sleeveless kurta showcasing an intricate gold zardozi neckline medallion, all-over floral bootis, and a sheer organza embroidered border. An effortless statement for festive dinners.",
+    productionNote:
+      "Available as unstitched fabric or bespoke tailored. Pure Silk.",
+  },
+  {
+    slug: "silver-lavender-embroidered-angrakha-maxi",
+    name: "Silver Lavender Embroidered Angrakha Maxi",
+    category: "Bridal Wear",
+    categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
+    price: 285000,
+    currency: "PKR",
+    images: [
+      "/images/products/silver-lavender-embroidered-angrakha-maxi/img-1.webp",
+      "/images/products/silver-lavender-embroidered-angrakha-maxi/img-2.webp",
+      "/images/products/silver-lavender-embroidered-angrakha-maxi/img-3.webp",
+    ],
+    highlights: [
+      "Fabric: Pure Silk net gown layered over pure silk slip with organza veil",
+      "Work detail: Multi-tiered scalloped Zardozi borders, kattdana cut-beads, and delicate pearl fringes",
+      "Regal asymmetric angrakha overlapping neckline with floor-sweeping flare",
+      "Matching sheer veil with intricate four-sided borders",
+    ],
+    description:
+      "A grand bridal angrakha maxi crafted on fine silk net foundation in subtle silver-lavender tones. Featuring dense multi-tiered scalloped zardozi borders, kattdana cut-beads, and delicate pearl work designed for Nikah and reception festivities.",
+    productionNote:
+      "Custom crafted to client measurements or available unstitched. Pure Silk. Crafting: 10–12 weeks.",
+  },
+  {
+    slug: "jet-black-embroidered-raw-silk-shirt",
+    name: "Jet Black Embroidered Raw Silk Shirt",
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    price: 190000,
+    currency: "PKR",
+    images: [
+      "/images/products/jet-black-embroidered-raw-silk-shirt/img-1.webp",
+      "/images/products/jet-black-embroidered-raw-silk-shirt/img-2.webp",
+      "/images/products/jet-black-embroidered-raw-silk-shirt/img-3.webp",
+    ],
+    highlights: [
+      "Fabric: Pure Raw Silk long shirt with matching silk trousers and dupatta",
+      "Work detail: Antique silver & gold Zardozi panels, botanical jaal, and dense cuff embroidery",
+      "Ornate architectural daman border with fine scalloped edges",
+      "High-contrast metallic needlecraft on rich black silk",
+    ],
+    description:
+      "Classic elegance in jet black pure raw silk. Features elaborate antique silver and gold zardozi panels, architectural daman borders, and dense hand-embroidered sleeve cuffs. A dramatic choice for evening formals.",
+    productionNote:
+      "Hand-embroidered in Faisalabad. Pure Silk. Available stitched or unstitched.",
+  },
+  {
+    slug: "champagne-tissue-flared-anarkali-maxi",
+    name: "Champagne Tissue Flared Anarkali Maxi",
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    price: 265000,
+    currency: "PKR",
+    images: [
+      "/images/products/champagne-tissue-flared-anarkali-maxi/img-1.webp",
+      "/images/products/champagne-tissue-flared-anarkali-maxi/img-2.webp",
+      "/images/products/champagne-tissue-flared-anarkali-maxi/img-3.webp",
+    ],
+    highlights: [
+      "Fabric: Pure Silk tissue and silk organza flared foundation",
+      "Work detail: Golden filigree Zardozi arabesques, micro cutdana beads, and jewel accents",
+      "Sweeping kalidaar anarkali flare with tailored scoop neckline",
+      "Handcrafted sheer dupatta with delicate gold border edging",
+    ],
+    description:
+      "An ethereal champagne tissue flared anarkali gown adorned with delicate golden filigree zardozi arabesques, micro-beadwork, and jewel accents across the sweeping kalis. Ideal for grand receptions and wedding guests.",
+    productionNote:
+      "Bespoke tailoring or unstitched luxury fabric. Pure Silk.",
+  },
+  {
+    slug: "midnight-blue-embroidered-anarkali-maxi",
+    name: "Midnight Blue Embroidered Anarkali Maxi",
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    price: 250000,
+    currency: "PKR",
+    images: [
+      "/images/products/midnight-blue-embroidered-anarkali-maxi/img-1.webp",
+      "/images/products/midnight-blue-embroidered-anarkali-maxi/img-2.webp",
+      "/images/products/midnight-blue-embroidered-anarkali-maxi/img-3.webp",
+      "/images/products/midnight-blue-embroidered-anarkali-maxi/img-4.webp",
+    ],
+    highlights: [
+      "Fabric: Pure Raw Silk flared anarkali with organza dupatta",
+      "Work detail: Celestial gold & silver Zardozi spray bootis and architectural daman border",
+      "Voluminous pleated skirt with dense floral hemline embroidery",
+      "Classic round neckline with jewel sleeve accents",
+    ],
+    description:
+      "Stately midnight navy blue pure silk anarkali maxi illuminated with celestial gold and silver zardozi spray bootis and an ornate architectural floral daman border. Perfect for evening weddings and formal galas.",
+    productionNote:
+      "Made to order with bespoke customization or unstitched. Pure Silk.",
+  },
+  {
+    slug: "ivory-silver-embroidered-tissue-shirt",
+    name: "Ivory Silver Embroidered Tissue Shirt",
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    price: 185000,
+    currency: "PKR",
+    images: [
+      "/images/products/ivory-silver-embroidered-tissue-shirt/img-1.webp",
+      "/images/products/ivory-silver-embroidered-tissue-shirt/img-2.webp",
+      "/images/products/ivory-silver-embroidered-tissue-shirt/img-3.webp",
+      "/images/products/ivory-silver-embroidered-tissue-shirt/img-4.webp",
+    ],
+    highlights: [
+      "Fabric: Pure Silk tissue shirt with coordinating silk trousers",
+      "Work detail: Vertical linear Zardozi vines, heirloom neckline motifs, and rich cutdana border",
+      "Elaborate paisley and floral daman embroidery",
+      "Intricately embellished sleeve cuffs",
+    ],
+    description:
+      "Cut from shimmering ivory silver tissue silk, this formal shirt features vertical linear zardozi vines, heirloom neckline motifs, and a rich cutdana daman border. A graceful ensemble for daytime and evening celebrations.",
+    productionNote:
+      "Hand-embroidered in Faisalabad. Pure Silk. Available stitched or unstitched.",
+  },
+  {
+    slug: "lilac-gray-embroidered-sleeveless-kurta",
+    name: "Lilac Gray Embroidered Sleeveless Kurta",
+    category: "Party Wear",
+    categories: ["New Arrivals", "Unstitched", "Party Wear"],
+    price: 155000,
+    currency: "PKR",
+    images: [
+      "/images/products/lilac-gray-embroidered-sleeveless-kurta/img-1.webp",
+      "/images/products/lilac-gray-embroidered-sleeveless-kurta/img-2.webp",
+      "/images/products/lilac-gray-embroidered-sleeveless-kurta/img-3.webp",
+      "/images/products/lilac-gray-embroidered-sleeveless-kurta/img-4.webp",
+    ],
+    highlights: [
+      "Fabric: Pure Raw Silk sleeveless shirt with brocade trousers",
+      "Work detail: Modern geometric Zardozi jaal, chandelier daman motifs, and micro pearls",
+      "Crystalline boat neckline with fine beadwork",
+      "Coordinating unstitched trousers and dupatta",
+    ],
+    description:
+      "Contemporary sleeveless silhouette in soft lilac-gray raw silk, featuring modern geometric zardozi jaal, chandelier daman motifs, and delicate micro pearls. An elegant choice for festive dinners and daytime parties.",
+    productionNote:
+      "Luxury unstitched fabric set or made to order. Pure Silk.",
+  },
+  {
+    slug: "peach-organza-front-open-gown",
+    name: "Peach Organza Front-Open Gown",
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    price: 260000,
+    currency: "PKR",
+    images: [
+      "/images/products/peach-organza-front-open-gown/img-1.webp",
+      "/images/products/peach-organza-front-open-gown/img-2.webp",
+      "/images/products/peach-organza-front-open-gown/img-3.webp",
+      "/images/products/peach-organza-front-open-gown/img-4.webp",
+      "/images/products/peach-organza-front-open-gown/img-5.webp",
+    ],
+    highlights: [
+      "Fabric: Pure Silk organza front-open pishwas with silk inner and trousers",
+      "Work detail: Scalloped front slit borders, dense bodice embroidery, crystals, and pearls",
+      "Cascading floral bootis throughout the flowing floor-length flare",
+      "Elaborate hand-worked border along the hemline and sleeves",
+    ],
+    description:
+      "Ethereal front-open floor-length pishwas gown rendered in translucent peach organza with a scalloped front slit, elaborate bodice embroidery, and shimmering crystal highlights. Layered over pure silk for maximum royal grace.",
+    productionNote:
+      "Custom tailored or available unstitched. Pure Silk. Crafting: 8–10 weeks.",
+  },
 ];
