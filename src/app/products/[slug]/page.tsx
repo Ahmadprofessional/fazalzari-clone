@@ -34,12 +34,14 @@ export async function generateMetadata({
       title: `${product.name} | Fazal Zari`,
       description: product.description.slice(0, 200),
       url: `${BASE_URL}/products/${product.slug}`,
-      images: product.images.map((img) => ({
-        url: img.startsWith("http") ? img : `${BASE_URL}${img}`,
-        width: 800,
-        height: 1067,
-        alt: product.name,
-      })),
+      images: [
+        {
+          url: product.images[0].startsWith("http") ? product.images[0] : `${BASE_URL}${product.images[0]}`,
+          width: 800,
+          height: 1067,
+          alt: product.name,
+        }
+      ],
       type: "website",
     },
     twitter: {
