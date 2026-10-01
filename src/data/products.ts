@@ -1,18 +1,23 @@
 import type { Product } from "@/types/content";
 
 /**
- * Fazal Zari Master Product Catalog (16 Pieces)
+ * Fazal Zari Master Product Catalog (27 Pieces)
  * Authentically crafted with client specifications:
  * - Fabrics: Pure Silk (Raw Silk, Tissue, Organza, Silk Net)
  * - Work Detail: Handcrafted Zardozi, Crystal, Kattdana (cutdana), Pearl (moti), Resham threadwork
  * - Optimized High-Performance WebP Imagery
  * - Primary thumbnail (images[0]) is ALWAYS a complete head-to-toe full length view
  * - Multi-category tagging: Unstitched and New Arrivals contain all items
+ * - Naming Convention: [Article Name] – [Visual Description] [Fabric/Embroidery] [Type]
+ *   Article names drawn from client-approved Traditional & Regal, Elegant & Poetic,
+ *   and Short Modern Luxury naming vocabularies.
  */
 export const products: Product[] = [
   {
     slug: "scarlet-embroidered-bridal-lehenga",
-    name: "Scarlet Embroidered Bridal Lehenga",
+    articleId: "FZ-NIK-01",
+    collectionName: "Laleh",
+    name: "Aylin",
     category: "Bridal Wear",
     categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
     price: 385000,
@@ -36,7 +41,9 @@ export const products: Product[] = [
   },
   {
     slug: "red-embroidered-lehenga",
-    name: "Red Embroidered Lehenga",
+    articleId: "FZ-NIK-02",
+    collectionName: "Laleh",
+    name: "Zoya",
     category: "Bridal Wear",
     categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
     price: 360000,
@@ -59,7 +66,9 @@ export const products: Product[] = [
   },
   {
     slug: "plum-embroidered-kurta-lehenga",
-    name: "Plum Embroidered Kurta Lehenga",
+    articleId: "FZ-NIK-03",
+    collectionName: "Laleh",
+    name: "Izel",
     category: "Bridal Wear",
     categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
     price: 350000,
@@ -84,7 +93,9 @@ export const products: Product[] = [
   },
   {
     slug: "champagne-embroidered-anarkali-lehenga",
-    name: "Champagne Embroidered Anarkali Lehenga",
+    articleId: "FZ-NIK-04",
+    collectionName: "Gul-e-Yaas",
+    name: "Ayla",
     category: "Bridal Wear",
     categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
     price: 340000,
@@ -108,7 +119,9 @@ export const products: Product[] = [
   },
   {
     slug: "dusty-rose-embroidered-pishwas-lehenga",
-    name: "Dusty Rose Embroidered Pishwas Lehenga",
+    articleId: "FZ-NIK-05",
+    collectionName: "Gul-e-Yaas",
+    name: "Zibah",
     category: "Bridal Wear",
     categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
     price: 310000,
@@ -130,7 +143,9 @@ export const products: Product[] = [
   },
   {
     slug: "rose-gold-embroidered-maxi",
-    name: "Rose Gold Embroidered Maxi",
+    articleId: "FZ-MEH-01",
+    collectionName: "Zar-e-Noor",
+    name: "Arya",
     category: "Luxury Formals",
     categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 295000,
@@ -152,7 +167,9 @@ export const products: Product[] = [
   },
   {
     slug: "beige-embroidered-maxi-anarkali",
-    name: "Beige Embroidered Maxi Anarkali",
+    articleId: "FZ-NIK-06",
+    collectionName: "Gul-e-Yaas",
+    name: "Mehru",
     category: "Bridal Wear",
     categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
     price: 280000,
@@ -176,7 +193,9 @@ export const products: Product[] = [
   },
   {
     slug: "taupe-embroidered-anarkali-lehenga",
-    name: "Taupe Embroidered Anarkali Lehenga",
+    articleId: "FZ-NIK-07",
+    collectionName: "Gul-e-Yaas",
+    name: "Nazik",
     category: "Bridal Wear",
     categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
     price: 275000,
@@ -198,7 +217,9 @@ export const products: Product[] = [
   },
   {
     slug: "teal-embroidered-slit-sleeve-kurta",
-    name: "Teal Embroidered Slit-Sleeve Kurta",
+    articleId: "FZ-MEH-02",
+    collectionName: "Jahan-e-Rung",
+    name: "Rhea",
     category: "Luxury Formals",
     categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 185000,
@@ -221,7 +242,9 @@ export const products: Product[] = [
   },
   {
     slug: "magenta-embroidered-anarkali-lehenga",
-    name: "Magenta Embroidered Anarkali Lehenga",
+    articleId: "FZ-MEH-03",
+    collectionName: "Laleh",
+    name: "Nura",
     category: "Luxury Formals",
     categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 245000,
@@ -243,7 +266,9 @@ export const products: Product[] = [
   },
   {
     slug: "muted-mauve-embroidered-lehenga",
-    name: "Muted Mauve Embroidered Lehenga",
+    articleId: "FZ-MEH-04",
+    collectionName: "Zar-e-Noor",
+    name: "Safa",
     category: "Luxury Formals",
     categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 260000,
@@ -266,7 +291,9 @@ export const products: Product[] = [
   },
   {
     slug: "peach-embroidered-maxi",
-    name: "Peach Embroidered Maxi",
+    articleId: "FZ-MEH-05",
+    collectionName: "Zar-e-Noor",
+    name: "Maya",
     category: "Luxury Formals",
     categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 230000,
@@ -289,7 +316,9 @@ export const products: Product[] = [
   },
   {
     slug: "lilac-gray-embroidered-maxi",
-    name: "Lilac Gray Embroidered Maxi",
+    articleId: "FZ-MEH-06",
+    collectionName: "Aab-e-Hayat",
+    name: "Ziva",
     category: "Luxury Formals",
     categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 220000,
@@ -311,7 +340,9 @@ export const products: Product[] = [
   },
   {
     slug: "mint-green-embroidered-kurta-set",
-    name: "Mint Green Embroidered Kurta Set",
+    articleId: "FZ-JAS-01",
+    collectionName: "Aab-e-Hayat",
+    name: "Kaya",
     category: "Party Wear",
     categories: ["New Arrivals", "Unstitched", "Party Wear"],
     price: 145000,
@@ -334,7 +365,9 @@ export const products: Product[] = [
   },
   {
     slug: "powder-blue-embroidered-kurta-set",
-    name: "Powder Blue Embroidered Kurta Set",
+    articleId: "FZ-JAS-02",
+    collectionName: "Aab-e-Hayat",
+    name: "Diya",
     category: "Party Wear",
     categories: ["New Arrivals", "Unstitched", "Party Wear"],
     price: 155000,
@@ -357,7 +390,9 @@ export const products: Product[] = [
   },
   {
     slug: "emerald-green-embroidered-kurta",
-    name: "Emerald Green Embroidered Kurta",
+    articleId: "FZ-JAS-03",
+    collectionName: "Jahan-e-Rung",
+    name: "Mila",
     category: "Party Wear",
     categories: ["New Arrivals", "Unstitched", "Party Wear"],
     price: 165000,
@@ -380,7 +415,9 @@ export const products: Product[] = [
   },
   {
     slug: "plum-embroidered-kurta-set",
-    name: "Plum Embroidered Kurta Set",
+    articleId: "FZ-JAS-04",
+    collectionName: "Jahan-e-Rung",
+    name: "Zara",
     category: "Party Wear",
     categories: ["New Arrivals", "Unstitched", "Party Wear"],
     price: 150000,
@@ -403,7 +440,9 @@ export const products: Product[] = [
   },
   {
     slug: "maroon-embroidered-raw-silk-kurta-set",
-    name: "Maroon Embroidered Raw Silk Kurta Set",
+    articleId: "FZ-MEH-07",
+    collectionName: "Laleh",
+    name: "Laila",
     category: "Luxury Formals",
     categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 175000,
@@ -427,7 +466,9 @@ export const products: Product[] = [
   },
   {
     slug: "rose-gold-tissue-embroidered-kurta-set",
-    name: "Rose Gold Tissue Embroidered Kurta Set",
+    articleId: "FZ-MEH-08",
+    collectionName: "Shab-e-Mahtab",
+    name: "Anya",
     category: "Luxury Formals",
     categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 195000,
@@ -451,7 +492,9 @@ export const products: Product[] = [
   },
   {
     slug: "black-embroidered-sleeveless-kurta",
-    name: "Black Embroidered Sleeveless Kurta",
+    articleId: "FZ-JAS-05",
+    collectionName: "Shab-e-Mahtab",
+    name: "Maha",
     category: "Party Wear",
     categories: ["New Arrivals", "Unstitched", "Party Wear"],
     price: 140000,
@@ -475,7 +518,9 @@ export const products: Product[] = [
   },
   {
     slug: "silver-lavender-embroidered-angrakha-maxi",
-    name: "Silver Lavender Embroidered Angrakha Maxi",
+    articleId: "FZ-NIK-08",
+    collectionName: "Gul-e-Yaas",
+    name: "Inara",
     category: "Bridal Wear",
     categories: ["New Arrivals", "Unstitched", "Bridal Wear"],
     price: 285000,
@@ -498,7 +543,9 @@ export const products: Product[] = [
   },
   {
     slug: "jet-black-embroidered-raw-silk-shirt",
-    name: "Jet Black Embroidered Raw Silk Shirt",
+    articleId: "FZ-MEH-09",
+    collectionName: "Shab-e-Mahtab",
+    name: "Nyla",
     category: "Luxury Formals",
     categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 190000,
@@ -521,7 +568,9 @@ export const products: Product[] = [
   },
   {
     slug: "champagne-tissue-flared-anarkali-maxi",
-    name: "Champagne Tissue Flared Anarkali Maxi",
+    articleId: "FZ-MEH-10",
+    collectionName: "Zar-e-Noor",
+    name: "Alizeh",
     category: "Luxury Formals",
     categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 265000,
@@ -544,7 +593,9 @@ export const products: Product[] = [
   },
   {
     slug: "midnight-blue-embroidered-anarkali-maxi",
-    name: "Midnight Blue Embroidered Anarkali Maxi",
+    articleId: "FZ-MEH-11",
+    collectionName: "Jahan-e-Rung",
+    name: "Tara",
     category: "Luxury Formals",
     categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 250000,
@@ -568,7 +619,9 @@ export const products: Product[] = [
   },
   {
     slug: "ivory-silver-embroidered-tissue-shirt",
-    name: "Ivory Silver Embroidered Tissue Shirt",
+    articleId: "FZ-MEH-12",
+    collectionName: "Aab-e-Hayat",
+    name: "Haya",
     category: "Luxury Formals",
     categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 185000,
@@ -592,7 +645,9 @@ export const products: Product[] = [
   },
   {
     slug: "lilac-gray-embroidered-sleeveless-kurta",
-    name: "Lilac Gray Embroidered Sleeveless Kurta",
+    articleId: "FZ-JAS-06",
+    collectionName: "Shab-e-Mahtab",
+    name: "Elif",
     category: "Party Wear",
     categories: ["New Arrivals", "Unstitched", "Party Wear"],
     price: 155000,
@@ -616,7 +671,9 @@ export const products: Product[] = [
   },
   {
     slug: "peach-organza-front-open-gown",
-    name: "Peach Organza Front-Open Gown",
+    articleId: "FZ-MEH-13",
+    collectionName: "Zar-e-Noor",
+    name: "Sana",
     category: "Luxury Formals",
     categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
     price: 260000,

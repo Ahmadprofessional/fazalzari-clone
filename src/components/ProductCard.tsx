@@ -42,7 +42,7 @@ export default function ProductCard({
   product,
   priority = false,
 }: ProductCardProps) {
-  const whatsappMsg = `Hi, I'm interested in the ${product.name} (${product.category}). Could you please share the price and custom order details?`;
+  const whatsappMsg = `Hi, I'm interested in the ${product.name} from the ${product.collectionName} collection (SKU: ${product.articleId}). Could you please share the price and custom order details?`;
 
   return (
     <div className="group relative flex flex-col overflow-hidden rounded-[8px] border border-gold-border/60 bg-gradient-to-b from-[#fdfbf7] via-[#faf6ee] to-[#f5eee2] shadow-[0_4px_20px_rgba(150,120,68,0.06)] transition-all duration-500 hover:-translate-y-1.5 hover:border-gold hover:shadow-[0_16px_36px_rgba(150,120,68,0.18)]">
@@ -71,11 +71,11 @@ export default function ProductCard({
 
       {/* Info Panel */}
       <div className="relative flex flex-1 flex-col justify-between p-5 pt-3 sm:p-6 sm:pt-4 text-center">
-        {/* Category with gold hairline flourishes */}
+        {/* Collection Name with gold hairline flourishes */}
         <div className="flex items-center justify-center gap-2">
           <span className="h-px flex-1 max-w-[24px] bg-gradient-to-r from-transparent to-gold" />
           <span className="font-sans text-[10.5px] font-semibold uppercase tracking-[2.5px] text-gold">
-            {product.category}
+            {product.collectionName}
           </span>
           <span className="h-px flex-1 max-w-[24px] bg-gradient-to-l from-transparent to-gold" />
         </div>

@@ -67,6 +67,7 @@ export default async function ProductDetailPage({
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
+    sku: product.articleId,
     description: product.description,
     image: product.images.map((img) => `${BASE_URL}${img}`),
     brand: {
@@ -114,7 +115,7 @@ export default async function ProductDetailPage({
               <li aria-hidden="true">/</li>
               <li>
                 <Link href="/products" className="hover:text-gold">
-                  {product.category}
+                  {product.collectionName}
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
@@ -131,14 +132,21 @@ export default async function ProductDetailPage({
             {/* Details */}
             <div className="flex flex-col gap-5">
               <span className="font-sans text-[11px] uppercase tracking-[2px] text-gold">
-                {product.category}
+                {product.collectionName}
               </span>
               <h1 className="font-serif-alt text-[26px] sm:text-[32px] md:text-[40px] font-medium leading-tight text-ink">
                 {product.name}
               </h1>
-              <Link href="/contact-us" className="font-sans text-xl sm:text-2xl text-body-gray hover:text-gold transition-colors duration-300">
-                Contact Us for Price
-              </Link>
+              <div className="flex flex-col gap-1">
+                {product.articleId && (
+                  <span className="font-sans text-[13px] text-body-gray/80 uppercase tracking-widest">
+                    SKU: {product.articleId}
+                  </span>
+                )}
+                <Link href="/contact-us" className="font-sans text-xl sm:text-2xl text-body-gray hover:text-gold transition-colors duration-300 mt-1">
+                  Contact Us for Price
+                </Link>
+              </div>
 
               <ul className="flex flex-col gap-2 border-y border-gold-border/40 py-5">
                 {product.highlights.map((h) => (
@@ -162,7 +170,7 @@ export default async function ProductDetailPage({
 
               <WhatsAppButton
                 variant="inline"
-                message={`Hi, I'm interested in the ${product.name}. Could you please share the price?`}
+                message={`Hi, I'm interested in ${product.name} from the ${product.collectionName} collection (SKU: ${product.articleId}). Could you please share the price?`}
                 label="Enquire on WhatsApp"
                 className="mt-4 inline-flex w-full sm:w-fit items-center justify-center gap-2 rounded-[3px] border-[1.6px] border-gold-light px-6 sm:px-8 py-3 sm:py-3.5 font-serif text-[14px] sm:text-[15px] font-semibold uppercase text-ink transition-all duration-300 ease-in-out hover:bg-gold-light"
               />

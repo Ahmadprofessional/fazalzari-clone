@@ -4,7 +4,6 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
-import Counter from "@/components/Counter";
 import { BLUR_DARK, BLUR_CREAM } from "@/lib/blur";
 
 export const metadata: Metadata = {
@@ -53,13 +52,6 @@ const whyChoose = [
     title: "EXCLUSIVE DESIGNS",
     description: "Unique collections created in limited quantities.",
   },
-];
-
-const stats = [
-  { to: 500, suffix: "+", label: "Luxury Bridal Dresses Created" },
-  { to: 1000, suffix: "+", label: "Satisfied Clients" },
-  { to: 6, suffix: "+", label: "Years of Craftmanship" },
-  { to: 100, suffix: "%", label: "Hand Finished" },
 ];
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
@@ -165,24 +157,6 @@ export default function AboutUsPage() {
             </div>
           </section>
         </Reveal>
-
-        {/* 3. Stats */}
-        <section className="bg-ink py-16">
-          <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-6 md:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <Counter
-                  to={stat.to}
-                  suffix={stat.suffix}
-                  className="font-serif-alt text-4xl font-bold text-gold-light md:text-5xl"
-                />
-                <p className="mt-2 font-sans text-sm text-gray-400">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
 
         {/* 4. Philosophy */}
         <Reveal>

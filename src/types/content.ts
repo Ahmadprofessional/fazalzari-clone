@@ -28,6 +28,8 @@ export interface SocialLink {
 
 export interface Product {
   slug: string;
+  articleId: string;
+  collectionName: string;
   name: string;
   category: string;
   categories?: string[];
