@@ -72,21 +72,6 @@ export default function ProductCatalogFilter({ products }: ProductCatalogFilterP
     return true;
   });
 
-  const getTabCount = (tabId: string): number => {
-    if (tabId === "all" || tabId === "new-arrivals" || tabId === "unstitched") {
-      return products.length;
-    }
-    if (tabId === "bridal-wear") {
-      return products.filter((p) => p.category === "Bridal Wear" || p.categories?.includes("Bridal Wear")).length;
-    }
-    if (tabId === "luxury-formals") {
-      return products.filter((p) => p.category === "Luxury Formals" || p.categories?.includes("Luxury Formals")).length;
-    }
-    if (tabId === "party-wear") {
-      return products.filter((p) => p.category === "Party Wear" || p.categories?.includes("Party Wear")).length;
-    }
-    return 0;
-  };
 
   return (
     <div className="w-full">
@@ -107,7 +92,6 @@ export default function ProductCatalogFilter({ products }: ProductCatalogFilterP
               )}
             >
               {tab.label}
-              <span className="ml-1.5 opacity-60 text-[11px]">({getTabCount(tab.id)})</span>
             </button>
           );
         })}
