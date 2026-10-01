@@ -14,7 +14,7 @@ import type { Product } from "@/types/content";
  */
 export const products: Product[] = [
   {
-    slug: "scarlet-embroidered-bridal-lehenga",
+    slug: "aylin",
     articleId: "FZ-NIK-01",
     collectionName: "Laleh",
     name: "Aylin",
@@ -40,7 +40,7 @@ export const products: Product[] = [
       "Custom crafted to individual client measurements or available as unstitched fabric. Pure Silk. Standard crafting: 12–16 weeks.",
   },
   {
-    slug: "red-embroidered-lehenga",
+    slug: "zoya",
     articleId: "FZ-NIK-02",
     collectionName: "Laleh",
     name: "Zoya",
@@ -65,7 +65,7 @@ export const products: Product[] = [
       "Hand-embroidered by master artisans in Faisalabad. Pure Silk. Available stitched or unstitched.",
   },
   {
-    slug: "plum-embroidered-kurta-lehenga",
+    slug: "izel",
     articleId: "FZ-NIK-03",
     collectionName: "Laleh",
     name: "Izel",
@@ -92,7 +92,7 @@ export const products: Product[] = [
       "Hand-embroidered by master artisans in Faisalabad. Pure Silk. Available as unstitched fabric or bespoke custom stitched.",
   },
   {
-    slug: "champagne-embroidered-anarkali-lehenga",
+    slug: "ayla",
     articleId: "FZ-NIK-04",
     collectionName: "Gul-e-Yaas",
     name: "Ayla",
@@ -118,7 +118,7 @@ export const products: Product[] = [
       "Exclusively made to order or unstitched luxury fabric. Pure Silk. Delivery: 12–14 weeks.",
   },
   {
-    slug: "dusty-rose-embroidered-pishwas-lehenga",
+    slug: "zibah",
     articleId: "FZ-NIK-05",
     collectionName: "Gul-e-Yaas",
     name: "Zibah",
@@ -142,7 +142,7 @@ export const products: Product[] = [
       "Custom tailored or available unstitched. Pure Silk. Crafting timeline: 10–12 weeks.",
   },
   {
-    slug: "rose-gold-embroidered-maxi",
+    slug: "arya",
     articleId: "FZ-MEH-01",
     collectionName: "Zar-e-Noor",
     name: "Arya",
@@ -166,7 +166,7 @@ export const products: Product[] = [
       "Bespoke tailoring or unstitched fabric set. Pure Silk. Allow 10–12 weeks.",
   },
   {
-    slug: "beige-embroidered-maxi-anarkali",
+    slug: "mehru",
     articleId: "FZ-NIK-06",
     collectionName: "Gul-e-Yaas",
     name: "Mehru",
@@ -192,7 +192,7 @@ export const products: Product[] = [
       "Handmade to order or luxury unstitched ensemble. Pure Silk. Delivery: 8–10 weeks.",
   },
   {
-    slug: "taupe-embroidered-anarkali-lehenga",
+    slug: "nazik",
     articleId: "FZ-NIK-07",
     collectionName: "Gul-e-Yaas",
     name: "Nazik",
@@ -216,7 +216,7 @@ export const products: Product[] = [
       "Made to order with bespoke customization or unstitched. Pure Silk.",
   },
   {
-    slug: "teal-embroidered-slit-sleeve-kurta",
+    slug: "rhea",
     articleId: "FZ-MEH-02",
     collectionName: "Jahan-e-Rung",
     name: "Rhea",
@@ -241,7 +241,7 @@ export const products: Product[] = [
       "Hand-embroidered in Faisalabad. Pure Silk. Available stitched or unstitched.",
   },
   {
-    slug: "magenta-embroidered-anarkali-lehenga",
+    slug: "nura",
     articleId: "FZ-MEH-03",
     collectionName: "Laleh",
     name: "Nura",
@@ -265,7 +265,7 @@ export const products: Product[] = [
       "Handcrafted upon order or luxury unstitched fabric. Pure Silk.",
   },
   {
-    slug: "muted-mauve-embroidered-lehenga",
+    slug: "safa",
     articleId: "FZ-MEH-04",
     collectionName: "Zar-e-Noor",
     name: "Safa",
@@ -290,7 +290,7 @@ export const products: Product[] = [
       "Bespoke tailoring available or unstitched fabric set. Pure Silk.",
   },
   {
-    slug: "peach-embroidered-maxi",
+    slug: "maya",
     articleId: "FZ-MEH-05",
     collectionName: "Zar-e-Noor",
     name: "Maya",
@@ -315,7 +315,7 @@ export const products: Product[] = [
       "Custom crafted upon order or unstitched suit fabric. Pure Silk.",
   },
   {
-    slug: "lilac-gray-embroidered-maxi",
+    slug: "ziva",
     articleId: "FZ-MEH-06",
     collectionName: "Aab-e-Hayat",
     name: "Ziva",
@@ -339,7 +339,7 @@ export const products: Product[] = [
       "Custom tailored or luxury unstitched fabric. Pure Silk.",
   },
   {
-    slug: "mint-green-embroidered-kurta-set",
+    slug: "kaya",
     articleId: "FZ-JAS-01",
     collectionName: "Aab-e-Hayat",
     name: "Kaya",
@@ -364,7 +364,7 @@ export const products: Product[] = [
       "Available as a complete luxury 3-piece unstitched fabric set or custom stitched. Pure Silk.",
   },
   {
-    slug: "powder-blue-embroidered-kurta-set",
+    slug: "diya",
     articleId: "FZ-JAS-02",
     collectionName: "Aab-e-Hayat",
     name: "Diya",
@@ -389,7 +389,7 @@ export const products: Product[] = [
       "Luxury unstitched 3-piece set or bespoke custom stitched. Pure Silk.",
   },
   {
-    slug: "emerald-green-embroidered-kurta",
+    slug: "mila",
     articleId: "FZ-JAS-03",
     collectionName: "Jahan-e-Rung",
     name: "Mila",
@@ -414,7 +414,7 @@ export const products: Product[] = [
       "Available as unstitched fabric or custom tailored. Pure Silk.",
   },
   {
-    slug: "plum-embroidered-kurta-set",
+    slug: "zara",
     articleId: "FZ-JAS-04",
     collectionName: "Jahan-e-Rung",
     name: "Zara",
@@ -439,7 +439,7 @@ export const products: Product[] = [
       "Luxury unstitched 3-piece fabric set or made to order. Pure Silk.",
   },
   {
-    slug: "maroon-embroidered-raw-silk-kurta-set",
+    slug: "laila",
     articleId: "FZ-MEH-07",
     collectionName: "Laleh",
     name: "Laila",
@@ -465,7 +465,7 @@ export const products: Product[] = [
       "Available as a complete luxury 2-piece unstitched fabric set or custom stitched. Pure Silk.",
   },
   {
-    slug: "rose-gold-tissue-embroidered-kurta-set",
+    slug: "anya",
     articleId: "FZ-MEH-08",
     collectionName: "Shab-e-Mahtab",
     name: "Anya",
@@ -491,7 +491,7 @@ export const products: Product[] = [
       "Handcrafted upon order or luxury unstitched fabric set. Pure Silk.",
   },
   {
-    slug: "black-embroidered-sleeveless-kurta",
+    slug: "maha",
     articleId: "FZ-JAS-05",
     collectionName: "Shab-e-Mahtab",
     name: "Maha",
@@ -517,7 +517,7 @@ export const products: Product[] = [
       "Available as unstitched fabric or bespoke tailored. Pure Silk.",
   },
   {
-    slug: "silver-lavender-embroidered-angrakha-maxi",
+    slug: "inara",
     articleId: "FZ-NIK-08",
     collectionName: "Gul-e-Yaas",
     name: "Inara",
@@ -542,7 +542,7 @@ export const products: Product[] = [
       "Custom crafted to client measurements or available unstitched. Pure Silk. Crafting: 10–12 weeks.",
   },
   {
-    slug: "jet-black-embroidered-raw-silk-shirt",
+    slug: "nyla",
     articleId: "FZ-MEH-09",
     collectionName: "Shab-e-Mahtab",
     name: "Nyla",
@@ -567,7 +567,7 @@ export const products: Product[] = [
       "Hand-embroidered in Faisalabad. Pure Silk. Available stitched or unstitched.",
   },
   {
-    slug: "champagne-tissue-flared-anarkali-maxi",
+    slug: "alizeh",
     articleId: "FZ-MEH-10",
     collectionName: "Zar-e-Noor",
     name: "Alizeh",
@@ -592,7 +592,7 @@ export const products: Product[] = [
       "Bespoke tailoring or unstitched luxury fabric. Pure Silk.",
   },
   {
-    slug: "midnight-blue-embroidered-anarkali-maxi",
+    slug: "tara",
     articleId: "FZ-MEH-11",
     collectionName: "Jahan-e-Rung",
     name: "Tara",
@@ -618,7 +618,7 @@ export const products: Product[] = [
       "Made to order with bespoke customization or unstitched. Pure Silk.",
   },
   {
-    slug: "ivory-silver-embroidered-tissue-shirt",
+    slug: "haya",
     articleId: "FZ-MEH-12",
     collectionName: "Aab-e-Hayat",
     name: "Haya",
@@ -644,7 +644,7 @@ export const products: Product[] = [
       "Hand-embroidered in Faisalabad. Pure Silk. Available stitched or unstitched.",
   },
   {
-    slug: "lilac-gray-embroidered-sleeveless-kurta",
+    slug: "elif",
     articleId: "FZ-JAS-06",
     collectionName: "Shab-e-Mahtab",
     name: "Elif",
@@ -670,7 +670,7 @@ export const products: Product[] = [
       "Luxury unstitched fabric set or made to order. Pure Silk.",
   },
   {
-    slug: "peach-organza-front-open-gown",
+    slug: "sana",
     articleId: "FZ-MEH-13",
     collectionName: "Zar-e-Noor",
     name: "Sana",

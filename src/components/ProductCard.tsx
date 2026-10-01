@@ -42,7 +42,8 @@ export default function ProductCard({
   product,
   priority = false,
 }: ProductCardProps) {
-  const whatsappMsg = `Hi, I'm interested in the ${product.name} from the ${product.collectionName} collection (SKU: ${product.articleId}). Could you please share the price and custom order details?`;
+  const productUrl = `https://fazalzari-clone.vercel.app/products/${product.slug}`;
+  const whatsappMsg = `Hi, I'm interested in the ${product.name} from the ${product.collectionName} collection (SKU: ${product.articleId}). Could you please share the price and custom order details?\n\n${productUrl}`;
 
   return (
     <div className="group relative flex flex-col overflow-hidden rounded-[8px] border border-gold-border/60 bg-gradient-to-b from-[#fdfbf7] via-[#faf6ee] to-[#f5eee2] shadow-[0_4px_20px_rgba(150,120,68,0.06)] transition-all duration-500 hover:-translate-y-1.5 hover:border-gold hover:shadow-[0_16px_36px_rgba(150,120,68,0.18)]">

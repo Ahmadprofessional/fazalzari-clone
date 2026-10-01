@@ -9,7 +9,7 @@ import ProductGallery from "@/components/ProductGallery";
 import { products } from "@/data/products";
 import { formatPrice } from "@/lib/utils";
 
-const BASE_URL = "https://fazalzari.com";
+const BASE_URL = "https://fazalzari-clone.vercel.app";
 
 export function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
@@ -35,7 +35,7 @@ export async function generateMetadata({
       description: product.description.slice(0, 200),
       url: `${BASE_URL}/products/${product.slug}`,
       images: product.images.map((img) => ({
-        url: img,
+        url: img.startsWith("http") ? img : `${BASE_URL}${img}`,
         width: 800,
         height: 1067,
         alt: product.name,
@@ -46,7 +46,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: `${product.name} | Fazal Zari`,
       description: product.description.slice(0, 160),
-      images: [product.images[0]],
+      images: [product.images[0].startsWith("http") ? product.images[0] : `${BASE_URL}${product.images[0]}`],
     },
   };
 }
@@ -173,7 +173,7 @@ export default async function ProductDetailPage({
 
               <WhatsAppButton
                 variant="inline"
-                message={`Hi, I'm interested in ${product.name} from the ${product.collectionName} collection (SKU: ${product.articleId}). Could you please share the price?`}
+                message={`Hi, I'm interested in ${product.name} from the ${product.collectionName} collection (SKU: ${product.articleId}). Could you please share the price?\n\nhttps://fazalzari-clone.vercel.app/products/${product.slug}`}
                 label="Enquire on WhatsApp"
                 className="mt-4 inline-flex w-full sm:w-fit items-center justify-center gap-2 rounded-[3px] border-[1.6px] border-gold-light px-6 sm:px-8 py-3 sm:py-3.5 font-serif text-[14px] sm:text-[15px] font-semibold uppercase text-ink transition-all duration-300 ease-in-out hover:bg-gold-light"
               />
