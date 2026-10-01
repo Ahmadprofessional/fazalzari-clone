@@ -2,6 +2,25 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+
+const InstagramIcon = ({ className }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+  </svg>
+);
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
@@ -152,6 +171,25 @@ export default function ContactUsPage() {
                         Monday &ndash; Saturday
                         <br />
                         11:00 AM &ndash; 9:00 PM
+                      </p>
+                    </div>
+                  </li>
+
+                  <li className="flex items-start gap-4">
+                    <InstagramIcon className="mt-1 size-5 shrink-0 text-gold" />
+                    <div>
+                      <h3 className="font-serif text-base font-bold text-[#0a0a0a]">
+                        Follow Us
+                      </h3>
+                      <p className="mt-1 font-sans text-sm leading-[22px] text-body-gray">
+                        <a
+                          href="https://www.instagram.com/fazal_zari?stkn=MTJmcjNwNmY5eWdkdQ=="
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="transition-colors duration-300 hover:text-gold"
+                        >
+                          @fazal_zari
+                        </a>
                       </p>
                     </div>
                   </li>

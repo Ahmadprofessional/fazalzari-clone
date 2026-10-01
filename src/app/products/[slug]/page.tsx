@@ -146,6 +146,9 @@ export default async function ProductDetailPage({
                 <Link href="/contact-us" className="font-sans text-xl sm:text-2xl text-body-gray hover:text-gold transition-colors duration-300 mt-1">
                   Contact Us for Price
                 </Link>
+                <div className="font-italic text-[15px] italic text-body-gray/90 mt-1">
+                  Pure Silk & Zardozi
+                </div>
               </div>
 
               <ul className="flex flex-col gap-2 border-y border-gold-border/40 py-5">

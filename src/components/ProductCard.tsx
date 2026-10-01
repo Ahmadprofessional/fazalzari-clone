@@ -90,12 +90,8 @@ export default function ProductCard({
           </Link>
         </div>
 
-        {/* Fabric & Price Line */}
-        <div className="mb-4 flex flex-wrap items-center justify-center gap-1.5 text-xs text-body-gray">
-          <span className="font-italic italic text-[13px] text-body-gray/90">
-            Pure Silk & Zardozi
-          </span>
-          <span className="inline-block size-1 rounded-full bg-gold/50" />
+        {/* Price Line */}
+        <div className="mb-4 flex flex-wrap items-center justify-center text-xs text-body-gray">
           <Link
             href="/contact-us"
             className="font-serif text-[13.5px] font-medium tracking-wide text-gold transition-colors duration-200 hover:text-ink hover:underline"
