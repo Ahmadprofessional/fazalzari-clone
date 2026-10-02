@@ -37,8 +37,8 @@ export default function WhatsAppButton({
           "inline-flex items-center justify-center gap-2 rounded-[3px] border-[1.6px] border-gold-light px-6 py-3 font-serif text-[14px] font-semibold uppercase text-white transition-all duration-300 ease-in-out hover:bg-gold-light hover:text-[#0a0a0a]"
         }
       >
-        <WhatsAppIcon className="size-4" />
-        {label ?? "Enquire on WhatsApp"}
+        <WhatsAppIcon className={label ? "size-4" : "size-[20px]"} />
+        {label ? label : null}
       </a>
     );
   }

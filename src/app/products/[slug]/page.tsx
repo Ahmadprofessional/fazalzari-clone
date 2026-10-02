@@ -103,7 +103,7 @@ export default async function ProductDetailPage({
       <Header />
       <main className="flex flex-1 flex-col">
 
-        <div className="border-b border-gold-border/30 bg-cream py-3 sm:py-4">
+        <div className="border-b border-gold-border/30 bg-cream pt-24 pb-3 sm:pt-32 sm:pb-4">
           <nav
             aria-label="Breadcrumb"
             className="mx-auto max-w-7xl px-4 sm:px-6 font-sans text-[10px] sm:text-xs uppercase tracking-[1px] text-body-gray"

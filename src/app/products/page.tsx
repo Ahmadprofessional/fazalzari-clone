@@ -18,7 +18,7 @@ export default function ProductsPage() {
     <>
       <Header />
       <main>
-        <section className="bg-ink py-10 sm:py-14 md:py-16 text-center px-5 sm:px-6">
+        <section className="bg-ink pt-32 pb-10 sm:pt-40 sm:pb-14 md:pb-16 text-center px-5 sm:px-6">
           <h1 className="font-serif uppercase text-white text-[24px] sm:text-[28px] md:text-[32px]">
             Collections
           </h1>

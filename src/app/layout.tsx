@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Cormorant, Cormorant_Garamond, Inter } from "next/font/google";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -141,8 +142,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             __html: JSON.stringify(organizationJsonLd),
           }}
         />
-        {children}
-        <WhatsAppButton />
+        <SmoothScroll>
+          {children}
+          <WhatsAppButton />
+        </SmoothScroll>
       </body>
     </html>
   );

@@ -4,9 +4,10 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SearchModal from "@/components/SearchModal";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -18,6 +19,7 @@ const NAV_LINKS = [
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const lastScrollY = useRef(0);
@@ -54,14 +56,15 @@ export default function Header() {
   }, [mobileOpen]);
 
   return (
-    <header
-      suppressHydrationWarning
+    <>
+      <header
+        suppressHydrationWarning
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-300 ease-in-out",
+        "fixed top-0 z-50 w-full transition-all duration-300 ease-in-out",
         isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none",
         isScrolled
           ? "bg-ink/95 backdrop-blur-md shadow-xl shadow-black/30 border-b border-gold-border/20"
-          : "bg-ink border-b border-transparent"
+          : "bg-gradient-to-b from-black/80 via-black/40 to-transparent border-b border-transparent"
       )}
     >
       {/* Top announcement bar (collapses on scroll for a sleek compact header) */}
@@ -71,16 +74,16 @@ export default function Header() {
           isScrolled ? "max-h-0 py-0 opacity-0 border-transparent" : "max-h-12 py-2.5 opacity-100"
         )}
       >
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 text-xs">
-          <span className="font-sans tracking-[1px] uppercase text-gray-400">
+        <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 text-[10px] sm:text-xs">
+          <span className="font-sans tracking-[1px] uppercase text-gray-200 drop-shadow-md">
             Complimentary Nationwide Delivery
           </span>
-          <span className="font-sans tracking-[1px] uppercase text-gray-400">
+          <span className="font-sans tracking-[1px] uppercase text-gray-200 drop-shadow-md">
             Handcrafted Heritage &bull; Designed For Modern Brides
           </span>
           <a
             href="tel:+923009736020"
-            className="flex items-center gap-2 font-sans tracking-[1px] uppercase text-gray-400 transition-colors duration-300 hover:text-gold"
+            className="flex items-center gap-2 font-sans tracking-[1px] uppercase text-gray-200 drop-shadow-md transition-colors duration-300 hover:text-gold"
           >
             <Phone className="size-3.5" />
             Book An Appointment
@@ -126,13 +129,13 @@ export default function Header() {
         </Link>
 
         {/* Nav links */}
-        <nav className="hidden max-w-xl flex-wrap items-center justify-center gap-x-8 gap-y-1 md:flex">
+        <nav className="hidden items-center justify-center gap-x-5 md:flex">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.label}
               href={link.href}
               className={cn(
-                "relative font-sans text-[11px] font-medium uppercase leading-5 tracking-[3px] transition-colors duration-300 hover:text-gold py-1",
+                "relative font-sans text-xs sm:text-[13px] font-medium uppercase leading-5 tracking-[3px] transition-colors duration-300 hover:text-gold py-1 drop-shadow-md",
                 pathname === link.href ? "text-gold" : "text-white"
               )}
             >
@@ -146,10 +149,17 @@ export default function Header() {
 
         {/* Actions */}
         <div className="flex items-center gap-4">
+          <button 
+            onClick={() => setSearchOpen(true)}
+            className="text-white drop-shadow-md transition-colors duration-300 hover:text-gold"
+            aria-label="Search"
+          >
+            <Search className="size-[20px]" />
+          </button>
           <WhatsAppButton
             variant="inline"
             label=""
-            className="text-white transition-colors duration-300 hover:text-[#25D366]"
+            className="text-white drop-shadow-md transition-colors duration-300 hover:text-gold"
           />
         </div>
       </div>
@@ -172,6 +182,9 @@ export default function Header() {
           ))}
         </nav>
       )}
-    </header>
+      </header>
+
+      <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
+    </>
   );
 }
