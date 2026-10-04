@@ -252,6 +252,8 @@ export const products: Product[] = [
     images: [
       "/images/products/magenta-embroidered-anarkali-lehenga/img-1.webp",
       "/images/products/magenta-embroidered-anarkali-lehenga/img-2.webp",
+      "/images/products/magenta-embroidered-anarkali-lehenga/img-3.webp",
+      "/images/products/magenta-embroidered-anarkali-lehenga/img-4.webp",
     ],
     highlights: [
       "Fabric: Pure Silk raw silk base with tissue accents",
