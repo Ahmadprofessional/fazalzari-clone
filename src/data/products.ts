@@ -698,4 +698,30 @@ export const products: Product[] = [
     productionNote:
       "Custom tailored or available unstitched. Pure Silk. Crafting: 8–10 weeks.",
   },
+  {
+    slug: "liyana",
+    articleId: "FZ-MEH-14",
+    collectionName: "Aab-e-Hayat",
+    name: "Liyana",
+    category: "Luxury Formals",
+    categories: ["New Arrivals", "Unstitched", "Luxury Formals"],
+    price: 185000,
+    currency: "PKR",
+    images: [
+      "/images/products/liyana/img-1.png",
+      "/images/products/liyana/img-2.png",
+      "/images/products/liyana/img-3.png",
+      "/images/products/liyana/img-4.png",
+    ],
+    highlights: [
+      "Fabric: Pure Silk Anarkali with intricate multicolored zardozi",
+      "Work detail: Resham, gold dabka, and pearl embellishments in floral motifs",
+      "Features a deep round neckline and full-length embellished sleeves",
+      "Elegant voluminous flare with an opulent scalloped embroidered hemline",
+    ],
+    description:
+      "A radiant ivory-cream pure silk Anarkali masterpiece from the Aab-e-Hayat collection. Enriched with multicolored floral resham and opulent zardozi work, featuring a fully embellished scalloped hemline and meticulously detailed bodice that exudes timeless luxury.",
+    productionNote:
+      "Custom tailored or available unstitched. Pure Silk. Crafting: 6-8 weeks.",
+  },
 ];

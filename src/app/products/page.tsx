@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function ProductsPage() {
   return (
     <>
-      <Header />
+      <Header alwaysSolid={true} />
       <main>
         <section className="bg-ink pt-32 pb-10 sm:pt-40 sm:pb-14 md:pb-16 text-center px-5 sm:px-6">
           <h1 className="font-serif uppercase text-white text-[24px] sm:text-[28px] md:text-[32px]">

@@ -17,7 +17,11 @@ const NAV_LINKS = [
   { label: "Contact Us", href: "/contact-us" },
 ];
 
-export default function Header() {
+interface HeaderProps {
+  alwaysSolid?: boolean;
+}
+
+export default function Header({ alwaysSolid = false }: HeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -62,7 +66,7 @@ export default function Header() {
       className={cn(
         "fixed top-0 z-50 w-full transition-all duration-300 ease-in-out",
         isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none",
-        isScrolled
+        isScrolled || alwaysSolid
           ? "bg-ink/95 backdrop-blur-md shadow-xl shadow-black/30 border-b border-gold-border/20"
           : "bg-gradient-to-b from-black/80 via-black/40 to-transparent border-b border-transparent"
       )}
