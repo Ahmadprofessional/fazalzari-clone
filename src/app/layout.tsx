@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Poppins, Cormorant, Cormorant_Garamond, Inter } from "next/font/google";
+import Script from "next/script";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
+
+const GA_ID = "G-VV96Z6XZQ6";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -146,6 +149,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
           <WhatsAppButton />
         </SmoothScroll>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
       </body>
     </html>
   );
