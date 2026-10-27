@@ -724,4 +724,128 @@ export const products: Product[] = [
     productionNote:
       "Custom tailored or available unstitched. Pure Silk. Crafting: 6-8 weeks.",
   },
+  {
+    slug: "zarfishan",
+    articleId: "FZ-MEH-15",
+    collectionName: "Zar-e-Noor",
+    name: "Zarfishan",
+    category: "Luxury Formals",
+    categories: ["New Arrivals","Unstitched","Luxury Formals"],
+    price: 275000,
+    currency: "PKR",
+    images: [
+          "/images/products/zarfishan/img-1.webp",
+          "/images/products/zarfishan/img-2.webp",
+          "/images/products/zarfishan/img-3.webp"
+    ],
+    highlights: [
+          "Fabric: Pure Silk net flared foundation layered over pure silk inner",
+          "Work detail: Scalloped antique gold Zardozi, tilla, fine cutdana, and resham needlework",
+          "Floor-length kalidaar silhouette with intricate bodice and jewel scoop neckline",
+          "Hand-scalloped architectural daman border with delicate floral vines"
+    ],
+    description:
+      "A grand ivory-champagne flared pishwas gown from the Zar-e-Noor collection. Titled Zarfishan ('Scattering Gold'), this couture creation is showered with antique gold zardozi, glistening cutdana, and delicate resham floral vines cascading along the kalis down to a lavish hand-scalloped hemline.",
+    productionNote:
+      "Available as complete luxury unstitched fabric set or custom stitched to measurements. Pure Silk.",
+  },
+  {
+    slug: "zumurrud",
+    articleId: "FZ-JAS-07",
+    collectionName: "Jahan-e-Rung",
+    name: "Zumurrud",
+    category: "Party Wear",
+    categories: ["New Arrivals","Unstitched","Party Wear"],
+    price: 165000,
+    currency: "PKR",
+    images: [
+          "/images/products/zumurrud/img-1.webp",
+          "/images/products/zumurrud/img-2.webp"
+    ],
+    highlights: [
+          "Fabric: 100% Pure Micro Velvet in deep emerald green",
+          "Work detail: Antique gold Zardozi, tilla lace borders, and fine kattdana cut-beads",
+          "Contemporary kaftan-kurta silhouette with regal kimono sleeves and side slits",
+          "Hand-embellished jewel boat neckline with floral borders"
+    ],
+    description:
+      "Crafted from sumptuous emerald green pure micro-velvet, Zumurrud ('The Imperial Emerald') embodies aristocratic Mughal heritage. Accented with intricate antique gold zardozi and kattdana borders along the neckline, side slits, and sweeping kimono sleeves.",
+    productionNote:
+      "Available unstitched or tailored to client specifications. Pure Velvet. Delivery: 4–6 weeks.",
+  },
+  {
+    slug: "raqs-e-noor",
+    articleId: "FZ-MEH-16",
+    collectionName: "Aab-e-Hayat",
+    name: "Raqs-e-Noor",
+    category: "Luxury Formals",
+    categories: ["New Arrivals","Unstitched","Luxury Formals"],
+    price: 245000,
+    currency: "PKR",
+    images: [
+          "/images/products/raqs-e-noor/img-1.webp",
+          "/images/products/raqs-e-noor/img-2.webp",
+          "/images/products/raqs-e-noor/img-3.webp"
+    ],
+    highlights: [
+          "Fabric: Pure Silk tissue and raw silk flared gown",
+          "Work detail: Delicate geometric jaal, floral bootis, cutdana, and micro-pearls",
+          "Sweeping kalidaar anarkali flare with dense embellished bodice",
+          "Ornate hand-finished cutwork daman border"
+    ],
+    description:
+      "An ethereal muted champagne-gold pure tissue silk flared anarkali gown titled Raqs-e-Noor ('Dance of Light'). Featuring a geometric scalloped zardozi jaal that catches the light with every step, and an opulent cutwork daman border encrusted with fine cutdana and pearls.",
+    productionNote:
+      "Custom tailored to client measurements or available unstitched. Pure Silk.",
+  },
+  {
+    slug: "shab-rang",
+    articleId: "FZ-JAS-08",
+    collectionName: "Shab-e-Mahtab",
+    name: "Shab-Rang",
+    category: "Party Wear",
+    categories: ["New Arrivals","Unstitched","Party Wear"],
+    price: 160000,
+    currency: "PKR",
+    images: [
+          "/images/products/shab-rang/img-1.webp",
+          "/images/products/shab-rang/img-2.webp"
+    ],
+    highlights: [
+          "Fabric: 100% Pure Micro Velvet in rich espresso chocolate brown",
+          "Work detail: Heritage gold Zardozi, dabka, and micro-sequin borders",
+          "Refined kaftan-cut silhouette with an artisanal keyhole neckline",
+          "Handcrafted embellished border along the sleeve cuffs, side vents, and daman"
+    ],
+    description:
+      "Cut from rich espresso chocolate velvet, Shab-Rang ('The Hue of Midnight') is an alluring nocturnal statement. Illuminated with artisanal gold zardozi along the keyhole neckline, regal sleeve cuffs, and daman borders for intimate festive evenings.",
+    productionNote:
+      "Pure Silk Velvet. Hand-crafted upon order or available as unstitched luxury fabric set.",
+  },
+  {
+    slug: "afsaanah",
+    articleId: "FZ-MEH-17",
+    collectionName: "Laleh",
+    name: "Afsaanah",
+    category: "Luxury Formals",
+    categories: ["New Arrivals","Unstitched","Luxury Formals"],
+    price: 230000,
+    currency: "PKR",
+    images: [
+          "/images/products/afsaanah/img-1.webp",
+          "/images/products/afsaanah/img-2.webp",
+          "/images/products/afsaanah/img-3.webp",
+          "/images/products/afsaanah/img-4.webp"
+    ],
+    highlights: [
+          "Fabric: Pure Silk net saree with pure silk petticoat and raw silk blouse",
+          "Work detail: Intricate silver Zardozi, crystals, sequins, and scalloped cutwork borders",
+          "Heavily embellished blouse with ornate neckline and back detailing",
+          "Ethereal sheer pallu with all-over spray and four-sided scalloped handwork"
+    ],
+    description:
+      "A breathtaking platinum silver net saree named Afsaanah ('The Ethereal Legend'). Encrusted with silver zardozi filigree, faceted crystal stones, and hand-cut scalloped borders, paired with a densely embellished artisan blouse for regal celebrations.",
+    productionNote:
+      "Custom tailored blouse and saree drape. Pure Silk. Standard crafting: 6–8 weeks.",
+  },
 ];
